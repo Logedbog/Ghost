@@ -1,0 +1,2647 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local NewUi2 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TapList = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local VisualsTab = Instance.new("ImageButton")
+local SettingsTab = Instance.new("ImageButton")
+local MovementTab = Instance.new("ImageButton")
+local AimbotTab = Instance.new("ImageButton")
+local WeaponsTab = Instance.new("ImageButton")
+local TopBar = Instance.new("Frame")
+local MovementFrame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Bhop = Instance.new("TextLabel")
+local BhopButton = Instance.new("TextButton")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Frame_4 = Instance.new("Frame")
+local AimbotFrame = Instance.new("Frame")
+local Frame_5 = Instance.new("Frame")
+local AintiKick = Instance.new("TextLabel")
+local AntiKickButton = Instance.new("TextButton")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local Frame_6 = Instance.new("Frame")
+local LegitSilentAim = Instance.new("TextLabel")
+local LegitSilentAimButton = Instance.new("TextButton")
+local RageSilentAim = Instance.new("TextLabel")
+local RageSilentAimButton = Instance.new("TextButton")
+local AintiAim = Instance.new("TextLabel")
+local AntiAimButton = Instance.new("TextButton")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local Frame_7 = Instance.new("Frame")
+local SettingsFrame = Instance.new("Frame")
+local Frame_8 = Instance.new("Frame")
+local Frame_9 = Instance.new("Frame")
+local Frame_10 = Instance.new("Frame")
+local VisualsFrame = Instance.new("Frame")
+local Frame_11 = Instance.new("Frame")
+local Frame_12 = Instance.new("Frame")
+local Frame_13 = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local Detecter = Instance.new("TextButton")
+local Fov = Instance.new("TextLabel")
+local FovTextbox = Instance.new("TextBox")
+local Chams = Instance.new("TextLabel")
+local ChamsButton = Instance.new("TextButton")
+local NoFlash = Instance.new("TextLabel")
+local NoFlashButton = Instance.new("TextButton")
+local NoSmoke = Instance.new("TextLabel")
+local NoSmokeButton = Instance.new("TextButton")
+local Frame_14 = Instance.new("Frame")
+local WeaponFrame = Instance.new("Frame")
+local Frame_15 = Instance.new("Frame")
+local PlayerName = Instance.new("TextLabel")
+local SpawnGunButton = Instance.new("TextButton")
+local SpawnGunTextbox = Instance.new("TextBox")
+local GetC4Button = Instance.new("TextButton")
+local DeleteC4Button = Instance.new("TextButton")
+local KillButton = Instance.new("TextButton")
+local LoopKillButton = Instance.new("TextButton")
+local KillAllButton = Instance.new("TextButton")
+local Frame_16 = Instance.new("Frame")
+local FireRate = Instance.new("TextLabel")
+local UpdateFireRate = Instance.new("TextButton")
+local FireRateTextbox = Instance.new("TextBox")
+local Ammo = Instance.new("TextLabel")
+local UpdateAmmo = Instance.new("TextButton")
+local AmmoTextbox = Instance.new("TextBox")
+local Auto = Instance.new("TextLabel")
+local AutoButton = Instance.new("TextButton")
+local Spread = Instance.new("TextLabel")
+local UpdateSpread = Instance.new("TextButton")
+local SpreadTextbox = Instance.new("TextBox")
+local Recoil = Instance.new("TextLabel")
+local UpdateRecoil = Instance.new("TextButton")
+local RecoilTextbox = Instance.new("TextBox")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local WallBang = Instance.new("TextLabel")
+local WallBangButton = Instance.new("TextButton")
+local Frame_17 = Instance.new("Frame")
+local Skins = Instance.new("TextLabel")
+local SkinsButton = Instance.new("TextButton")
+local UIListLayout_6 = Instance.new("UIListLayout")
+local PLS = Instance.new("TextLabel")
+local PlayerList = Instance.new("ImageLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Player1 = Instance.new("TextButton")
+local Player2 = Instance.new("TextButton")
+local Player3 = Instance.new("TextButton")
+local Player4 = Instance.new("TextButton")
+local Player5 = Instance.new("TextButton")
+local Player6 = Instance.new("TextButton")
+local Player7 = Instance.new("TextButton")
+local Player8 = Instance.new("TextButton")
+local Player9 = Instance.new("TextButton")
+local Player10 = Instance.new("TextButton")
+local Player11 = Instance.new("TextButton")
+local Player12 = Instance.new("TextButton")
+local Player13 = Instance.new("TextButton")
+local Player14 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Cursor = Instance.new("Frame")
+
+--Properties:
+
+NewUi2.Name = "NewUi2"
+NewUi2.Parent = game.CoreGui
+Frame.Active = true
+Frame.Draggable = true
+
+Frame.Parent = NewUi2
+Frame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0692307726, 0, 0.128060266, 0)
+Frame.Size = UDim2.new(0, 497, 0, 450)
+
+TapList.Name = "TapList"
+TapList.Parent = Frame
+TapList.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TapList.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TapList.BorderSizePixel = 0
+TapList.Position = UDim2.new(-0.00192306796, 0, 0.010960456, 0)
+TapList.Size = UDim2.new(0, 50, 0, 444)
+
+UIListLayout.Parent = TapList
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 50)
+
+VisualsTab.Name = "VisualsTab"
+VisualsTab.Parent = TapList
+VisualsTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+VisualsTab.BackgroundTransparency = 1.000
+VisualsTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VisualsTab.BorderSizePixel = 0
+VisualsTab.Position = UDim2.new(0.140000001, 0, 0.209339336, 0)
+VisualsTab.Size = UDim2.new(0, 49, 0, 49)
+VisualsTab.Image = "http://www.roblox.com/asset/?id=5402923383"
+VisualsTab.ImageColor3 = Color3.fromRGB(50, 50, 50)
+
+SettingsTab.Name = "SettingsTab"
+SettingsTab.Parent = TapList
+SettingsTab.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SettingsTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsTab.BorderSizePixel = 0
+SettingsTab.Position = UDim2.new(0.140000001, 0, 0.209339336, 0)
+SettingsTab.Size = UDim2.new(0, 49, 0, 49)
+SettingsTab.AutoButtonColor = false
+SettingsTab.Image = "http://www.roblox.com/asset/?id=5403133442"
+SettingsTab.ImageColor3 = Color3.fromRGB(50, 50, 50)
+
+MovementTab.Name = "MovementTab"
+MovementTab.Parent = TapList
+MovementTab.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+MovementTab.BorderSizePixel = 0
+MovementTab.Position = UDim2.new(0.0492307656, 0, 0.521300972, 0)
+MovementTab.Size = UDim2.new(0, 49, 0, 49)
+MovementTab.ZIndex = 2
+MovementTab.Image = "rbxassetid://3926305904"
+MovementTab.ImageColor3 = Color3.fromRGB(0, 0, 0)
+MovementTab.ImageRectOffset = Vector2.new(924, 684)
+MovementTab.ImageRectSize = Vector2.new(36, 36)
+
+AimbotTab.Name = "AimbotTab"
+AimbotTab.Parent = TapList
+AimbotTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AimbotTab.BackgroundTransparency = 1.000
+AimbotTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimbotTab.BorderSizePixel = 0
+AimbotTab.Position = UDim2.new(0.120000005, 0, 0.529159129, 0)
+AimbotTab.Size = UDim2.new(0, 49, 0, 49)
+AimbotTab.Image = "http://www.roblox.com/asset/?id=1063347537"
+AimbotTab.ImageColor3 = Color3.fromRGB(50, 50, 50)
+
+WeaponsTab.Name = "WeaponsTab"
+WeaponsTab.Parent = TapList
+WeaponsTab.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+WeaponsTab.BackgroundTransparency = 0.500
+WeaponsTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WeaponsTab.BorderSizePixel = 0
+WeaponsTab.Position = UDim2.new(0.140000001, 0, 0.209339336, 0)
+WeaponsTab.Size = UDim2.new(0, 49, 0, 49)
+WeaponsTab.Image = "http://www.roblox.com/asset/?id=5403088113"
+WeaponsTab.ImageColor3 = Color3.fromRGB(50, 50, 50)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Frame
+TopBar.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TopBar.BorderSizePixel = 0
+TopBar.Position = UDim2.new(-0.00192303723, 0, -0.000150655105, 0)
+TopBar.Size = UDim2.new(0, 497, 0, 5)
+
+MovementFrame.Name = "MovementFrame"
+MovementFrame.Parent = Frame
+MovementFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MovementFrame.BackgroundTransparency = 1.000
+MovementFrame.BorderSizePixel = 0
+MovementFrame.Position = UDim2.new(0.0985915512, 0, 0.0088888891, 0)
+MovementFrame.Size = UDim2.new(0, 447, 0, 444)
+MovementFrame.Visible = false
+
+Frame_2.Parent = MovementFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_2.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_2.Position = UDim2.new(0.586043239, 0, 0.027322745, 0)
+Frame_2.Size = UDim2.new(0, 173, 0, 173)
+
+Frame_3.Parent = MovementFrame
+Frame_3.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_3.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_3.Position = UDim2.new(0.0138989948, 0, 0.0295750014, 0)
+Frame_3.Size = UDim2.new(0, 221, 0, 419)
+
+Bhop.Name = "Bhop"
+Bhop.Parent = Frame_3
+Bhop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bhop.BackgroundTransparency = 1.000
+Bhop.Position = UDim2.new(0.054298643, 0, 0.050119333, 0)
+Bhop.Size = UDim2.new(0, 47, 0, 15)
+Bhop.Font = Enum.Font.Arial
+Bhop.Text = "Bhop"
+Bhop.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bhop.TextSize = 14.000
+
+BhopButton.Name = "BhopButton"
+BhopButton.Parent = Bhop
+BhopButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+BhopButton.BorderSizePixel = 0
+BhopButton.Position = UDim2.new(1.18928468, 0, 0.0525059551, 0)
+BhopButton.Size = UDim2.new(0, 12, 0, 12)
+BhopButton.Font = Enum.Font.SourceSans
+BhopButton.Text = ""
+BhopButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+BhopButton.TextSize = 14.000
+
+UIListLayout_2.Parent = Frame_3
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+Frame_4.Parent = MovementFrame
+Frame_4.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_4.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_4.Position = UDim2.new(0.586043239, 0, 0.583118558, 0)
+Frame_4.Size = UDim2.new(0, 173, 0, 173)
+
+AimbotFrame.Name = "AimbotFrame"
+AimbotFrame.Parent = Frame
+AimbotFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotFrame.BackgroundTransparency = 1.000
+AimbotFrame.BorderSizePixel = 0
+AimbotFrame.Position = UDim2.new(0.0985915512, 0, 0.0088888891, 0)
+AimbotFrame.Size = UDim2.new(0, 447, 0, 444)
+
+Frame_5.Parent = AimbotFrame
+Frame_5.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_5.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_5.Position = UDim2.new(0.586043239, 0, 0.027322745, 0)
+Frame_5.Size = UDim2.new(0, 173, 0, 173)
+
+AintiKick.Name = "AintiKick"
+AintiKick.Parent = Frame_5
+AintiKick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AintiKick.BackgroundTransparency = 1.000
+AintiKick.Size = UDim2.new(0, 65, 0, 15)
+AintiKick.Font = Enum.Font.Arial
+AintiKick.Text = "Anti kick"
+AintiKick.TextColor3 = Color3.fromRGB(0, 0, 0)
+AintiKick.TextSize = 14.000
+
+AntiKickButton.Name = "AntiKickButton"
+AntiKickButton.Parent = AintiKick
+AntiKickButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+AntiKickButton.BorderSizePixel = 0
+AntiKickButton.Position = UDim2.new(1.23116601, 0, 0.0434010848, 0)
+AntiKickButton.Size = UDim2.new(0, 12, 0, 12)
+AntiKickButton.Font = Enum.Font.SourceSans
+AntiKickButton.Text = ""
+AntiKickButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiKickButton.TextSize = 14.000
+
+UIListLayout_3.Parent = Frame_5
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+
+Frame_6.Parent = AimbotFrame
+Frame_6.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_6.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_6.Position = UDim2.new(0.0138989948, 0, 0.0295750014, 0)
+Frame_6.Size = UDim2.new(0, 221, 0, 419)
+
+LegitSilentAim.Name = "LegitSilentAim"
+LegitSilentAim.Parent = Frame_6
+LegitSilentAim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LegitSilentAim.BackgroundTransparency = 1.000
+LegitSilentAim.Position = UDim2.new(0.0542986542, 0, 0.050119333, 0)
+LegitSilentAim.Size = UDim2.new(0, 100, 0, 15)
+LegitSilentAim.Font = Enum.Font.Arial
+LegitSilentAim.Text = "Legit Silent Aim"
+LegitSilentAim.TextColor3 = Color3.fromRGB(0, 0, 0)
+LegitSilentAim.TextSize = 14.000
+
+LegitSilentAimButton.Name = "LegitSilentAimButton"
+LegitSilentAimButton.Parent = LegitSilentAim
+LegitSilentAimButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+LegitSilentAimButton.BorderSizePixel = 0
+LegitSilentAimButton.Position = UDim2.new(1.11013579, 0, 0.119172633, 0)
+LegitSilentAimButton.Size = UDim2.new(0, 12, 0, 12)
+LegitSilentAimButton.Font = Enum.Font.SourceSans
+LegitSilentAimButton.Text = ""
+LegitSilentAimButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+LegitSilentAimButton.TextSize = 14.000
+
+RageSilentAim.Name = "RageSilentAim"
+RageSilentAim.Parent = Frame_6
+RageSilentAim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RageSilentAim.BackgroundTransparency = 1.000
+RageSilentAim.Position = UDim2.new(0.0542986542, 0, 0.131264925, 0)
+RageSilentAim.Size = UDim2.new(0, 100, 0, 15)
+RageSilentAim.Font = Enum.Font.Arial
+RageSilentAim.Text = "Rage Silent Aim"
+RageSilentAim.TextColor3 = Color3.fromRGB(0, 0, 0)
+RageSilentAim.TextSize = 14.000
+
+RageSilentAimButton.Name = "RageSilentAimButton"
+RageSilentAimButton.Parent = RageSilentAim
+RageSilentAimButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+RageSilentAimButton.BorderSizePixel = 0
+RageSilentAimButton.Position = UDim2.new(1.11013579, 0, 0.0669848844, 0)
+RageSilentAimButton.Size = UDim2.new(0, 12, 0, 12)
+RageSilentAimButton.Font = Enum.Font.SourceSans
+RageSilentAimButton.Text = ""
+RageSilentAimButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+RageSilentAimButton.TextSize = 14.000
+
+AintiAim.Name = "AintiAim"
+AintiAim.Parent = Frame_6
+AintiAim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AintiAim.BackgroundTransparency = 1.000
+AintiAim.Position = UDim2.new(0, 0, 0.0715990439, 0)
+AintiAim.Size = UDim2.new(0, 65, 0, 15)
+AintiAim.Font = Enum.Font.Arial
+AintiAim.Text = "Anti Aim"
+AintiAim.TextColor3 = Color3.fromRGB(0, 0, 0)
+AintiAim.TextSize = 14.000
+
+AntiAimButton.Name = "AntiAimButton"
+AntiAimButton.Parent = AintiAim
+AntiAimButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+AntiAimButton.BorderSizePixel = 0
+AntiAimButton.Position = UDim2.new(1.09466064, 0, 0.138583928, 0)
+AntiAimButton.Size = UDim2.new(0, 12, 0, 12)
+AntiAimButton.Font = Enum.Font.SourceSans
+AntiAimButton.Text = ""
+AntiAimButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAimButton.TextSize = 14.000
+
+UIListLayout_4.Parent = Frame_6
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+
+Frame_7.Parent = AimbotFrame
+Frame_7.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_7.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_7.Position = UDim2.new(0.586043239, 0, 0.583118558, 0)
+Frame_7.Size = UDim2.new(0, 173, 0, 173)
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = Frame
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsFrame.BackgroundTransparency = 1.000
+SettingsFrame.BorderSizePixel = 0
+SettingsFrame.Position = UDim2.new(0.0985915512, 0, 0.0088888891, 0)
+SettingsFrame.Size = UDim2.new(0, 447, 0, 444)
+SettingsFrame.Visible = false
+
+Frame_8.Parent = SettingsFrame
+Frame_8.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_8.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_8.Position = UDim2.new(0.586043239, 0, 0.027322745, 0)
+Frame_8.Size = UDim2.new(0, 173, 0, 173)
+
+Frame_9.Parent = SettingsFrame
+Frame_9.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_9.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_9.Position = UDim2.new(0.0138989948, 0, 0.0295750014, 0)
+Frame_9.Size = UDim2.new(0, 221, 0, 419)
+
+Frame_10.Parent = SettingsFrame
+Frame_10.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_10.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_10.Position = UDim2.new(0.586043239, 0, 0.583118558, 0)
+Frame_10.Size = UDim2.new(0, 173, 0, 173)
+
+VisualsFrame.Name = "VisualsFrame"
+VisualsFrame.Parent = Frame
+VisualsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualsFrame.BackgroundTransparency = 1.000
+VisualsFrame.BorderSizePixel = 0
+VisualsFrame.Position = UDim2.new(0.0985915512, 0, 0.0088888891, 0)
+VisualsFrame.Size = UDim2.new(0, 447, 0, 444)
+VisualsFrame.Visible = false
+
+Frame_11.Parent = VisualsFrame
+Frame_11.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_11.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_11.Position = UDim2.new(0.586043239, 0, 0.027322745, 0)
+Frame_11.Size = UDim2.new(0, 173, 0, 173)
+
+Frame_12.Parent = VisualsFrame
+Frame_12.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_12.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_12.Position = UDim2.new(0.0138989948, 0, 0.0295750014, 0)
+Frame_12.Size = UDim2.new(0, 221, 0, 419)
+
+Frame_13.Parent = Frame_12
+Frame_13.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Frame_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_13.Position = UDim2.new(0.0747240111, 0, 0.126113996, 0)
+Frame_13.Size = UDim2.new(0, 130, 0, 5)
+
+Bar.Name = "Bar"
+Bar.Parent = Frame_13
+Bar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Bar.BorderSizePixel = 0
+Bar.Size = UDim2.new(-0.714056373, 101, 1, 0)
+
+Detecter.Name = "Detecter"
+Detecter.Parent = Frame_13
+Detecter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Detecter.BackgroundTransparency = 1.000
+Detecter.Size = UDim2.new(1, 0, 1, 0)
+Detecter.Font = Enum.Font.SourceSans
+Detecter.Text = ""
+Detecter.TextSize = 14.000
+
+Fov.Name = "Fov"
+Fov.Parent = Frame_12
+Fov.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fov.BackgroundTransparency = 1.000
+Fov.Position = UDim2.new(0.0769230798, 0, 0.050119333, 0)
+Fov.Size = UDim2.new(0, 35, 0, 15)
+Fov.Font = Enum.Font.Arial
+Fov.Text = "Fov"
+Fov.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fov.TextSize = 14.000
+
+FovTextbox.Name = "FovTextbox"
+FovTextbox.Parent = Frame_12
+FovTextbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+FovTextbox.BorderSizePixel = 0
+FovTextbox.Position = UDim2.new(0.316742092, 0, 0.050119333, 0)
+FovTextbox.Size = UDim2.new(0, 46, 0, 15)
+FovTextbox.Font = Enum.Font.Arial
+FovTextbox.Text = "70"
+FovTextbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+FovTextbox.TextSize = 14.000
+
+Chams.Name = "Chams"
+Chams.Parent = Frame_12
+Chams.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Chams.BackgroundTransparency = 1.000
+Chams.Position = UDim2.new(0.0769230798, 0, 0.186157525, 0)
+Chams.Size = UDim2.new(0, 53, 0, 15)
+Chams.Font = Enum.Font.Arial
+Chams.Text = "Chams"
+Chams.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chams.TextSize = 14.000
+
+ChamsButton.Name = "ChamsButton"
+ChamsButton.Parent = Frame_12
+ChamsButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ChamsButton.BorderSizePixel = 0
+ChamsButton.Position = UDim2.new(0.393665195, 0, 0.188544154, 0)
+ChamsButton.Size = UDim2.new(0, 12, 0, 12)
+ChamsButton.Font = Enum.Font.SourceSans
+ChamsButton.Text = ""
+ChamsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChamsButton.TextSize = 14.000
+
+NoFlash.Name = "NoFlash"
+NoFlash.Parent = Frame_12
+NoFlash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoFlash.BackgroundTransparency = 1.000
+NoFlash.Position = UDim2.new(0.0769230798, 0, 0.245823398, 0)
+NoFlash.Size = UDim2.new(0, 53, 0, 15)
+NoFlash.Font = Enum.Font.Arial
+NoFlash.Text = "No Flash"
+NoFlash.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoFlash.TextSize = 14.000
+
+NoFlashButton.Name = "NoFlashButton"
+NoFlashButton.Parent = Frame_12
+NoFlashButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+NoFlashButton.BorderSizePixel = 0
+NoFlashButton.Position = UDim2.new(0.393665195, 0, 0.248210028, 0)
+NoFlashButton.Size = UDim2.new(0, 12, 0, 12)
+NoFlashButton.Font = Enum.Font.SourceSans
+NoFlashButton.Text = ""
+NoFlashButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoFlashButton.TextSize = 14.000
+
+NoSmoke.Name = "NoSmoke"
+NoSmoke.Parent = Frame_12
+NoSmoke.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoSmoke.BackgroundTransparency = 1.000
+NoSmoke.Position = UDim2.new(0.0769230798, 0, 0.305489272, 0)
+NoSmoke.Size = UDim2.new(0, 53, 0, 15)
+NoSmoke.Font = Enum.Font.Arial
+NoSmoke.Text = "No Smoke"
+NoSmoke.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoSmoke.TextSize = 14.000
+
+NoSmokeButton.Name = "NoSmokeButton"
+NoSmokeButton.Parent = Frame_12
+NoSmokeButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+NoSmokeButton.BorderSizePixel = 0
+NoSmokeButton.Position = UDim2.new(0.393665195, 0, 0.307875901, 0)
+NoSmokeButton.Size = UDim2.new(0, 12, 0, 12)
+NoSmokeButton.Font = Enum.Font.SourceSans
+NoSmokeButton.Text = ""
+NoSmokeButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoSmokeButton.TextSize = 14.000
+
+Frame_14.Parent = VisualsFrame
+Frame_14.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_14.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_14.Position = UDim2.new(0.586043239, 0, 0.583118558, 0)
+Frame_14.Size = UDim2.new(0, 173, 0, 173)
+
+WeaponFrame.Name = "WeaponFrame"
+WeaponFrame.Parent = Frame
+WeaponFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WeaponFrame.BackgroundTransparency = 1.000
+WeaponFrame.BorderSizePixel = 0
+WeaponFrame.Position = UDim2.new(0.0985915512, 0, 0.0088888891, 0)
+WeaponFrame.Size = UDim2.new(0, 447, 0, 444)
+WeaponFrame.Visible = false
+
+Frame_15.Parent = WeaponFrame
+Frame_15.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_15.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_15.Position = UDim2.new(0.586043239, 0, 0.027322745, 0)
+Frame_15.Size = UDim2.new(0, 173, 0, 173)
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = Frame_15
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.Position = UDim2.new(0.244553059, 0, 0.00193138339, 0)
+PlayerName.Size = UDim2.new(0, 88, 0, 15)
+PlayerName.Font = Enum.Font.Arial
+PlayerName.Text = "Player Name"
+PlayerName.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerName.TextSize = 14.000
+
+SpawnGunButton.Name = "SpawnGunButton"
+SpawnGunButton.Parent = Frame_15
+SpawnGunButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SpawnGunButton.BorderSizePixel = 0
+SpawnGunButton.Position = UDim2.new(0, 0, 0.211251676, 0)
+SpawnGunButton.Size = UDim2.new(0, 58, 0, 18)
+SpawnGunButton.Font = Enum.Font.SourceSans
+SpawnGunButton.Text = "Spawn Gun"
+SpawnGunButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpawnGunButton.TextSize = 14.000
+
+SpawnGunTextbox.Name = "SpawnGunTextbox"
+SpawnGunTextbox.Parent = Frame_15
+SpawnGunTextbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SpawnGunTextbox.BorderSizePixel = 0
+SpawnGunTextbox.Position = UDim2.new(0.260769516, 0, 0.0840840414, 0)
+SpawnGunTextbox.Size = UDim2.new(0, 84, 0, 15)
+SpawnGunTextbox.Font = Enum.Font.Arial
+SpawnGunTextbox.Text = "Gun Name"
+SpawnGunTextbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpawnGunTextbox.TextSize = 14.000
+
+GetC4Button.Name = "GetC4Button"
+GetC4Button.Parent = Frame_15
+GetC4Button.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+GetC4Button.BorderSizePixel = 0
+GetC4Button.Position = UDim2.new(0.664739907, 0, 0.211251676, 0)
+GetC4Button.Size = UDim2.new(0, 58, 0, 18)
+GetC4Button.Font = Enum.Font.SourceSans
+GetC4Button.Text = "Get C4"
+GetC4Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetC4Button.TextSize = 14.000
+
+DeleteC4Button.Name = "DeleteC4Button"
+DeleteC4Button.Parent = Frame_15
+DeleteC4Button.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+DeleteC4Button.BorderSizePixel = 0
+DeleteC4Button.Position = UDim2.new(0.335260153, 0, 0.500269055, 0)
+DeleteC4Button.Size = UDim2.new(0, 58, 0, 18)
+DeleteC4Button.Font = Enum.Font.SourceSans
+DeleteC4Button.Text = "Delete C4"
+DeleteC4Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+DeleteC4Button.TextSize = 14.000
+
+KillButton.Name = "KillButton"
+KillButton.Parent = Frame_15
+KillButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+KillButton.BorderSizePixel = 0
+KillButton.Position = UDim2.new(0.329479784, 0, 0.696800828, 0)
+KillButton.Size = UDim2.new(0, 58, 0, 18)
+KillButton.Font = Enum.Font.SourceSans
+KillButton.Text = "Kill"
+KillButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillButton.TextSize = 14.000
+
+LoopKillButton.Name = "LoopKillButton"
+LoopKillButton.Parent = Frame_15
+LoopKillButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+LoopKillButton.BorderSizePixel = 0
+LoopKillButton.Position = UDim2.new(2.98023224e-08, 0, 0.852870226, 0)
+LoopKillButton.Size = UDim2.new(0, 58, 0, 18)
+LoopKillButton.Font = Enum.Font.SourceSans
+LoopKillButton.Text = "Loop Kill"
+LoopKillButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoopKillButton.TextSize = 14.000
+
+KillAllButton.Name = "KillAllButton"
+KillAllButton.Parent = Frame_15
+KillAllButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+KillAllButton.BorderSizePixel = 0
+KillAllButton.Position = UDim2.new(0.670520306, 0, 0.852870226, 0)
+KillAllButton.Size = UDim2.new(0, 58, 0, 18)
+KillAllButton.Font = Enum.Font.SourceSans
+KillAllButton.Text = "Kill All"
+KillAllButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAllButton.TextSize = 14.000
+
+Frame_16.Parent = WeaponFrame
+Frame_16.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_16.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_16.Position = UDim2.new(0.0138989948, 0, 0.0295750014, 0)
+Frame_16.Size = UDim2.new(0, 221, 0, 419)
+
+FireRate.Name = "FireRate"
+FireRate.Parent = Frame_16
+FireRate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FireRate.BackgroundTransparency = 1.000
+FireRate.Size = UDim2.new(0, 52, 0, 15)
+FireRate.Font = Enum.Font.Arial
+FireRate.Text = "Fire Rate"
+FireRate.TextColor3 = Color3.fromRGB(0, 0, 0)
+FireRate.TextSize = 14.000
+
+UpdateFireRate.Name = "UpdateFireRate"
+UpdateFireRate.Parent = FireRate
+UpdateFireRate.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UpdateFireRate.BorderSizePixel = 0
+UpdateFireRate.Position = UDim2.new(3.28752422, 0, 0.0501193255, 0)
+UpdateFireRate.Size = UDim2.new(0, 46, 0, 15)
+UpdateFireRate.Font = Enum.Font.SourceSans
+UpdateFireRate.Text = "Update"
+UpdateFireRate.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateFireRate.TextSize = 14.000
+
+FireRateTextbox.Name = "FireRateTextbox"
+FireRateTextbox.Parent = FireRate
+FireRateTextbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+FireRateTextbox.BorderSizePixel = 0
+FireRateTextbox.Position = UDim2.new(1.48817062, 0, -0.0832140073, 0)
+FireRateTextbox.Size = UDim2.new(0, 46, 0, 15)
+FireRateTextbox.Font = Enum.Font.Arial
+FireRateTextbox.Text = "0.3"
+FireRateTextbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+FireRateTextbox.TextSize = 14.000
+
+Ammo.Name = "Ammo"
+Ammo.Parent = Frame_16
+Ammo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ammo.BackgroundTransparency = 1.000
+Ammo.Position = UDim2.new(0, 0, 0.035799522, 0)
+Ammo.Size = UDim2.new(0, 52, 0, 15)
+Ammo.Font = Enum.Font.Arial
+Ammo.Text = "Ammo"
+Ammo.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ammo.TextSize = 14.000
+
+UpdateAmmo.Name = "UpdateAmmo"
+UpdateAmmo.Parent = Ammo
+UpdateAmmo.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UpdateAmmo.BorderSizePixel = 0
+UpdateAmmo.Position = UDim2.new(3.28752422, 0, 0.124105006, 0)
+UpdateAmmo.Size = UDim2.new(0, 46, 0, 15)
+UpdateAmmo.Font = Enum.Font.SourceSans
+UpdateAmmo.Text = "Update"
+UpdateAmmo.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateAmmo.TextSize = 14.000
+
+AmmoTextbox.Name = "AmmoTextbox"
+AmmoTextbox.Parent = Ammo
+AmmoTextbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+AmmoTextbox.BorderSizePixel = 0
+AmmoTextbox.Position = UDim2.new(1.48817062, 0, -0.00922831893, 0)
+AmmoTextbox.Size = UDim2.new(0, 46, 0, 15)
+AmmoTextbox.Font = Enum.Font.Arial
+AmmoTextbox.Text = ""
+AmmoTextbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+AmmoTextbox.TextSize = 14.000
+
+Auto.Name = "Auto"
+Auto.Parent = Frame_16
+Auto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Auto.BackgroundTransparency = 1.000
+Auto.Position = UDim2.new(0, 0, 0.0715990439, 0)
+Auto.Size = UDim2.new(0, 52, 0, 15)
+Auto.Font = Enum.Font.Arial
+Auto.Text = "Auto"
+Auto.TextColor3 = Color3.fromRGB(0, 0, 0)
+Auto.TextSize = 14.000
+
+AutoButton.Name = "AutoButton"
+AutoButton.Parent = Auto
+AutoButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+AutoButton.BorderSizePixel = 0
+AutoButton.Position = UDim2.new(1.48817062, 0, 0.0790771693, 0)
+AutoButton.Size = UDim2.new(0, 12, 0, 12)
+AutoButton.Font = Enum.Font.SourceSans
+AutoButton.Text = ""
+AutoButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoButton.TextSize = 14.000
+
+Spread.Name = "Spread"
+Spread.Parent = Frame_16
+Spread.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spread.BackgroundTransparency = 1.000
+Spread.Position = UDim2.new(0, 0, 0.10739857, 0)
+Spread.Size = UDim2.new(0, 52, 0, 15)
+Spread.Font = Enum.Font.Arial
+Spread.Text = "Spread"
+Spread.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spread.TextSize = 14.000
+
+UpdateSpread.Name = "UpdateSpread"
+UpdateSpread.Parent = Spread
+UpdateSpread.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UpdateSpread.BorderSizePixel = 0
+UpdateSpread.Position = UDim2.new(3.28752422, 0, -0.0469371676, 0)
+UpdateSpread.Size = UDim2.new(0, 46, 0, 15)
+UpdateSpread.Font = Enum.Font.SourceSans
+UpdateSpread.Text = "Update"
+UpdateSpread.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateSpread.TextSize = 14.000
+
+SpreadTextbox.Name = "SpreadTextbox"
+SpreadTextbox.Parent = Spread
+SpreadTextbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SpreadTextbox.BorderSizePixel = 0
+SpreadTextbox.Position = UDim2.new(1.48817062, 0, -0.0469371676, 0)
+SpreadTextbox.Size = UDim2.new(0, 46, 0, 15)
+SpreadTextbox.Font = Enum.Font.Arial
+SpreadTextbox.Text = "1"
+SpreadTextbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpreadTextbox.TextSize = 14.000
+
+Recoil.Name = "Recoil"
+Recoil.Parent = Frame_16
+Recoil.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Recoil.BackgroundTransparency = 1.000
+Recoil.Position = UDim2.new(0, 0, 0.143198088, 0)
+Recoil.Size = UDim2.new(0, 52, 0, 15)
+Recoil.Font = Enum.Font.Arial
+Recoil.Text = "Recoil"
+Recoil.TextColor3 = Color3.fromRGB(0, 0, 0)
+Recoil.TextSize = 14.000
+
+UpdateRecoil.Name = "UpdateRecoil"
+UpdateRecoil.Parent = Recoil
+UpdateRecoil.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+UpdateRecoil.BorderSizePixel = 0
+UpdateRecoil.Position = UDim2.new(3.28752422, 0, -0.0252983272, 0)
+UpdateRecoil.Size = UDim2.new(0, 46, 0, 15)
+UpdateRecoil.Font = Enum.Font.SourceSans
+UpdateRecoil.Text = "Update"
+UpdateRecoil.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateRecoil.TextSize = 14.000
+
+RecoilTextbox.Name = "RecoilTextbox"
+RecoilTextbox.Parent = Recoil
+RecoilTextbox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+RecoilTextbox.BorderSizePixel = 0
+RecoilTextbox.Position = UDim2.new(1.48817062, 0, -0.0252983272, 0)
+RecoilTextbox.Size = UDim2.new(0, 46, 0, 15)
+RecoilTextbox.Font = Enum.Font.Arial
+RecoilTextbox.Text = "1"
+RecoilTextbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+RecoilTextbox.TextSize = 14.000
+
+UIListLayout_5.Parent = Frame_16
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+
+WallBang.Name = "WallBang"
+WallBang.Parent = Frame_16
+WallBang.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WallBang.BackgroundTransparency = 1.000
+WallBang.Position = UDim2.new(0, 0, 0.0715990439, 0)
+WallBang.Size = UDim2.new(0, 52, 0, 15)
+WallBang.Font = Enum.Font.Arial
+WallBang.Text = "WallBang"
+WallBang.TextColor3 = Color3.fromRGB(0, 0, 0)
+WallBang.TextSize = 14.000
+
+WallBangButton.Name = "WallBangButton"
+WallBangButton.Parent = WallBang
+WallBangButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+WallBangButton.BorderSizePixel = 0
+WallBangButton.Position = UDim2.new(1.48817062, 0, 0.0790771693, 0)
+WallBangButton.Size = UDim2.new(0, 12, 0, 12)
+WallBangButton.Font = Enum.Font.SourceSans
+WallBangButton.Text = ""
+WallBangButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+WallBangButton.TextSize = 14.000
+
+Frame_17.Parent = WeaponFrame
+Frame_17.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_17.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Frame_17.Position = UDim2.new(0.586043239, 0, 0.583118558, 0)
+Frame_17.Size = UDim2.new(0, 173, 0, 173)
+
+Skins.Name = "Skins"
+Skins.Parent = Frame_17
+Skins.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Skins.BackgroundTransparency = 1.000
+Skins.Size = UDim2.new(0, 78, 0, 15)
+Skins.Font = Enum.Font.Arial
+Skins.Text = "Get all Skins"
+Skins.TextColor3 = Color3.fromRGB(0, 0, 0)
+Skins.TextSize = 14.000
+
+SkinsButton.Name = "SkinsButton"
+SkinsButton.Parent = Skins
+SkinsButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SkinsButton.BorderSizePixel = 0
+SkinsButton.Position = UDim2.new(1.12919629, 0, 0.0790771693, 0)
+SkinsButton.Size = UDim2.new(0, 12, 0, 12)
+SkinsButton.Font = Enum.Font.SourceSans
+SkinsButton.Text = ""
+SkinsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkinsButton.TextSize = 14.000
+
+UIListLayout_6.Parent = Frame_17
+UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+
+PLS.Name = "PLS"
+PLS.Parent = Frame
+PLS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PLS.BackgroundTransparency = 1.000
+PLS.BorderSizePixel = 0
+PLS.Position = UDim2.new(1.02857554, 0, -0.11219804, 0)
+PLS.Size = UDim2.new(0, 184, 0, 23)
+PLS.Font = Enum.Font.SourceSans
+PLS.Text = "Players"
+PLS.TextColor3 = Color3.fromRGB(0, 0, 0)
+PLS.TextSize = 16.000
+PLS.TextTransparency = 1.000
+PLS.TextWrapped = true
+
+PlayerList.Name = "PlayerList"
+PlayerList.Parent = PLS
+PlayerList.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+PlayerList.BackgroundTransparency = 1.000
+PlayerList.Position = UDim2.new(-0.00162439758, 0, 2.19223142, 0)
+PlayerList.Size = UDim2.new(0, 184, 0, 448)
+PlayerList.Image = "rbxassetid://3570695787"
+PlayerList.ImageColor3 = Color3.fromRGB(50, 50, 50)
+PlayerList.ScaleType = Enum.ScaleType.Slice
+PlayerList.SliceCenter = Rect.new(100, 100, 100, 100)
+PlayerList.SliceScale = 0.120
+
+ScrollingFrame.Parent = PlayerList
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(-0.00199989649, 0, 0.0999999717, 0)
+ScrollingFrame.Size = UDim2.new(0, 184, 0, 391)
+ScrollingFrame.ScrollBarThickness = 5
+
+Player1.Name = "Player1"
+Player1.Parent = ScrollingFrame
+Player1.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player1.BorderSizePixel = 0
+Player1.Position = UDim2.new(0.00499999989, 0, 0, 0)
+Player1.Size = UDim2.new(0, 184, 0, 20)
+Player1.Font = Enum.Font.SourceSans
+Player1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player1.TextScaled = true
+Player1.TextSize = 14.000
+Player1.TextWrapped = true
+
+Player2.Name = "Player2"
+Player2.Parent = ScrollingFrame
+Player2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player2.BorderSizePixel = 0
+Player2.Position = UDim2.new(-0.000434782822, 0, 0.0462046191, 0)
+Player2.Size = UDim2.new(0, 184, 0, 20)
+Player2.Font = Enum.Font.SourceSans
+Player2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player2.TextScaled = true
+Player2.TextSize = 14.000
+Player2.TextWrapped = true
+
+Player3.Name = "Player3"
+Player3.Parent = ScrollingFrame
+Player3.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player3.BorderSizePixel = 0
+Player3.Position = UDim2.new(-0.000434782822, 0, 0.0973597392, 0)
+Player3.Size = UDim2.new(0, 184, 0, 20)
+Player3.Font = Enum.Font.SourceSans
+Player3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player3.TextScaled = true
+Player3.TextSize = 14.000
+Player3.TextWrapped = true
+
+Player4.Name = "Player4"
+Player4.Parent = ScrollingFrame
+Player4.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player4.BorderSizePixel = 0
+Player4.Position = UDim2.new(-0.000434782822, 0, 0.153465346, 0)
+Player4.Size = UDim2.new(0, 184, 0, 20)
+Player4.Font = Enum.Font.SourceSans
+Player4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player4.TextScaled = true
+Player4.TextSize = 14.000
+Player4.TextWrapped = true
+
+Player5.Name = "Player5"
+Player5.Parent = ScrollingFrame
+Player5.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player5.BorderSizePixel = 0
+Player5.Position = UDim2.new(0.00499999989, 0, 0.20627062, 0)
+Player5.Size = UDim2.new(0, 184, 0, 20)
+Player5.Font = Enum.Font.SourceSans
+Player5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player5.TextScaled = true
+Player5.TextSize = 14.000
+Player5.TextWrapped = true
+
+Player6.Name = "Player6"
+Player6.Parent = ScrollingFrame
+Player6.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player6.BorderSizePixel = 0
+Player6.Position = UDim2.new(-0.000434782822, 0, 0.267326713, 0)
+Player6.Size = UDim2.new(0, 184, 0, 20)
+Player6.Font = Enum.Font.SourceSans
+Player6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player6.TextScaled = true
+Player6.TextSize = 14.000
+Player6.TextWrapped = true
+
+Player7.Name = "Player7"
+Player7.Parent = ScrollingFrame
+Player7.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player7.BorderSizePixel = 0
+Player7.Position = UDim2.new(0.00499999989, 0, 0.32838285, 0)
+Player7.Size = UDim2.new(0, 184, 0, 20)
+Player7.Font = Enum.Font.SourceSans
+Player7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player7.TextScaled = true
+Player7.TextSize = 14.000
+Player7.TextWrapped = true
+
+Player8.Name = "Player8"
+Player8.Parent = ScrollingFrame
+Player8.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player8.BorderSizePixel = 0
+Player8.Position = UDim2.new(-0.000434782822, 0, 0.387788773, 0)
+Player8.Size = UDim2.new(0, 184, 0, 20)
+Player8.Font = Enum.Font.SourceSans
+Player8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player8.TextScaled = true
+Player8.TextSize = 14.000
+Player8.TextWrapped = true
+
+Player9.Name = "Player9"
+Player9.Parent = ScrollingFrame
+Player9.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player9.BorderSizePixel = 0
+Player9.Position = UDim2.new(-0.000434782822, 0, 0.442244232, 0)
+Player9.Size = UDim2.new(0, 184, 0, 20)
+Player9.Font = Enum.Font.SourceSans
+Player9.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player9.TextScaled = true
+Player9.TextSize = 14.000
+Player9.TextWrapped = true
+
+Player10.Name = "Player10"
+Player10.Parent = ScrollingFrame
+Player10.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player10.BorderSizePixel = 0
+Player10.Position = UDim2.new(0.00499999989, 0, 0.501650214, 0)
+Player10.Size = UDim2.new(0, 184, 0, 20)
+Player10.Font = Enum.Font.SourceSans
+Player10.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player10.TextScaled = true
+Player10.TextSize = 14.000
+Player10.TextWrapped = true
+
+Player11.Name = "Player11"
+Player11.Parent = ScrollingFrame
+Player11.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player11.BorderSizePixel = 0
+Player11.Position = UDim2.new(0.00505697355, 0, 0.562449515, 0)
+Player11.Size = UDim2.new(0, 184, 0, 20)
+Player11.Font = Enum.Font.SourceSans
+Player11.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player11.TextScaled = true
+Player11.TextSize = 14.000
+Player11.TextWrapped = true
+
+Player12.Name = "Player12"
+Player12.Parent = ScrollingFrame
+Player12.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player12.BorderSizePixel = 0
+Player12.Position = UDim2.new(-0.00581259187, 0, 0.621739268, 0)
+Player12.Size = UDim2.new(0, 184, 0, 20)
+Player12.Font = Enum.Font.SourceSans
+Player12.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player12.TextScaled = true
+Player12.TextSize = 14.000
+Player12.TextWrapped = true
+
+Player13.Name = "Player13"
+Player13.Parent = ScrollingFrame
+Player13.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player13.BorderSizePixel = 0
+Player13.Position = UDim2.new(0.000434782356, 0, 0.689272404, 0)
+Player13.Size = UDim2.new(0, 184, 0, 20)
+Player13.Font = Enum.Font.SourceSans
+Player13.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player13.TextScaled = true
+Player13.TextSize = 14.000
+Player13.TextWrapped = true
+
+Player14.Name = "Player14"
+Player14.Parent = ScrollingFrame
+Player14.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Player14.BorderSizePixel = 0
+Player14.Position = UDim2.new(0.00543478318, 0, 0.749174953, 0)
+Player14.Size = UDim2.new(0, 184, 0, 20)
+Player14.Font = Enum.Font.SourceSans
+Player14.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player14.TextScaled = true
+Player14.TextSize = 14.000
+Player14.TextWrapped = true
+
+TextLabel.Parent = PLS
+TextLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.070652172, 0, 2.19517899, 0)
+TextLabel.Size = UDim2.new(0, 157, 0, 28)
+TextLabel.Font = Enum.Font.Bodoni
+TextLabel.Text = "Players"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Cursor.Name = "Cursor"
+Cursor.Parent = NewUi2
+Cursor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cursor.BorderSizePixel = 0
+Cursor.Position = UDim2.new(0.491551429, 0, 0.489642203, 0)
+Cursor.Size = UDim2.new(0, 10, 0, 10)
+
+-- Scripts:
+
+local function LDWOSGK_fake_script() -- VisualsTab.Script 
+	local script = Instance.new('Script', VisualsTab)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(135,135,135)
+		script.Parent.MouseLeave:Connect(function()
+			script.Parent.ImageColor3 = Color3.fromRGB(50,50,50)
+		end)
+	end)
+	AFrame = script.Parent.Parent.Parent.AimbotFrame
+	MFrame = script.Parent.Parent.Parent.MovementFrame
+	SFrame = script.Parent.Parent.Parent.SettingsFrame
+	VFrame = script.Parent.Parent.Parent.VisualsFrame
+	WFrame = script.Parent.Parent.Parent.WeaponFrame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		AFrame.Visible = false
+		MFrame.Visible = false
+		SFrame.Visible = false
+		VFrame.Visible = true
+		WFrame.Visible = false
+	end)
+end
+coroutine.wrap(LDWOSGK_fake_script)()
+local function VRZYC_fake_script() -- SettingsTab.Script 
+	local script = Instance.new('Script', SettingsTab)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(135,135,135)
+		script.Parent.MouseLeave:Connect(function()
+			script.Parent.BackgroundColor3 = Color3.fromRGB(50,50,50)
+		end)
+	end)
+	AFrame = script.Parent.Parent.Parent.AimbotFrame
+	MFrame = script.Parent.Parent.Parent.MovementFrame
+	SFrame = script.Parent.Parent.Parent.SettingsFrame
+	VFrame = script.Parent.Parent.Parent.VisualsFrame
+	WFrame = script.Parent.Parent.Parent.WeaponFrame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		AFrame.Visible = false
+		MFrame.Visible = false
+		SFrame.Visible = true
+		VFrame.Visible = false
+		WFrame.Visible = false
+	end)
+end
+coroutine.wrap(VRZYC_fake_script)()
+local function HGMCVG_fake_script() -- MovementTab.Script 
+	local script = Instance.new('Script', MovementTab)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(135,135,135)
+		script.Parent.MouseLeave:Connect(function()
+			script.Parent.BackgroundColor3 = Color3.fromRGB(50,50,50)
+		end)
+	end)
+	AFrame = script.Parent.Parent.Parent.AimbotFrame
+	MFrame = script.Parent.Parent.Parent.MovementFrame
+	SFrame = script.Parent.Parent.Parent.SettingsFrame
+	VFrame = script.Parent.Parent.Parent.VisualsFrame
+	WFrame = script.Parent.Parent.Parent.WeaponFrame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		AFrame.Visible = false
+		MFrame.Visible = true
+		SFrame.Visible = false
+		VFrame.Visible = false
+		WFrame.Visible = false
+	end)
+end
+coroutine.wrap(HGMCVG_fake_script)()
+local function JIYQFX_fake_script() -- AimbotTab.Script 
+	local script = Instance.new('Script', AimbotTab)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(135,135,135)
+		script.Parent.MouseLeave:Connect(function()
+			script.Parent.ImageColor3 = Color3.fromRGB(50,50,50)
+		end)
+	end)
+	
+	AFrame = script.Parent.Parent.Parent.AimbotFrame
+	MFrame = script.Parent.Parent.Parent.MovementFrame
+	SFrame = script.Parent.Parent.Parent.SettingsFrame
+	VFrame = script.Parent.Parent.Parent.VisualsFrame
+	WFrame = script.Parent.Parent.Parent.WeaponFrame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		AFrame.Visible = true
+		MFrame.Visible = false
+		SFrame.Visible = false
+		VFrame.Visible = false
+		WFrame.Visible = false
+	end)
+end
+coroutine.wrap(JIYQFX_fake_script)()
+local function AFPZ_fake_script() -- WeaponsTab.Script 
+	local script = Instance.new('Script', WeaponsTab)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.ImageColor3 = Color3.fromRGB(135,135,135)
+		script.Parent.MouseLeave:Connect(function()
+			script.Parent.ImageColor3 = Color3.fromRGB(50,50,50)
+		end)
+	end)
+	AFrame = script.Parent.Parent.Parent.AimbotFrame
+	MFrame = script.Parent.Parent.Parent.MovementFrame
+	SFrame = script.Parent.Parent.Parent.SettingsFrame
+	VFrame = script.Parent.Parent.Parent.VisualsFrame
+	WFrame = script.Parent.Parent.Parent.WeaponFrame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		AFrame.Visible = false
+		MFrame.Visible = false
+		SFrame.Visible = false
+		VFrame.Visible = false
+		WFrame.Visible = true
+	end)
+end
+coroutine.wrap(AFPZ_fake_script)()
+local function IETPGHY_fake_script() -- BhopButton.Script 
+	local script = Instance.new('Script', BhopButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		local plrs=game:GetService("Players")
+		local plr=plrs.LocalPlayer
+		local UserInputService=game:GetService("UserInputService")
+		local spaceHeld=UserInputService:IsKeyDown(Enum.KeyCode.Space)
+		local C=getsenv(game.Players.LocalPlayer.PlayerGui.Client)
+		local backup={}
+		backup.speed=C.speedupdate
+		local n=0
+	
+		while wait() do
+		spaceHeld = UserInputService:IsKeyDown(Enum.KeyCode.Space)
+		if spaceHeld==true then
+		if workspace:FindFirstChild(plr.Name) then
+		if plr.Character:FindFirstChild("Humanoid") then
+		n=1
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+		C.speedupdate = function()
+		end
+		end
+		end
+		else
+		if n==1 then
+		n=0
+		wait(0.5)
+		C.speedupdate = backup.speed
+		wait()
+		end
+		end
+	end
+	end)
+end
+coroutine.wrap(IETPGHY_fake_script)()
+local function SBEE_fake_script() -- AntiKickButton.Script 
+	local script = Instance.new('Script', AntiKickButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+	--[[
+	IronBrew:tm: obfuscation; Version 2.7.0
+	
+	........................................................................................................................................................................................................
+	........................................................................................................................................................................................................
+	.....,,...,.............................................................................................................................................................................................
+	.... MMMMM,.............................................................................................................................................................................................
+	....MMMMMMM,............................................................................................................................................................................................
+	....MMMMMMM,............................................................................................................................................................................................
+	....,MMMMMO.............................................................................................................................................................................................
+	......,.................................................................................................................................................................................................
+	..................................................,,,,,,............................................Z$$.................................................................................................
+	...................................................:::::............................................MMMO................................................................................................
+	.....:???? ,.......:????....,.8MMMMM,.......,,,MMMMI???INMMM.,................,.?ZMMMMDI:,,.........MMM$................................................................................................
+	.....MMMMM?,.......MMMMM,,.OMMMMMMMM......, 7MM+?+++++++++?+DM$ .............MMMMMMMMMMMMMM ,,......MMM$................................................................................................
+	.....MMMMM?,.......MMMMM..NMMMMMMMMM.,...,$M7++++++++++++++++++M$ .........MMMMMMMMMMMMMMMMMN .,....MMM$................................................................................................
+	.....MMMMM?,.......MMMMMMMMMMM8..,,,.,..,MM?++++++++++++++++++++MM,,......MMMMMMMM~,.+MMMMMMMM......MMM$................................................................................................
+	.....MMMMM?,.......MMMMMMMMZ ,,.......MMMMMMMMMMMMMDZZZZMMMMMMMMMMMMM ...MMMMMM,,,....., MMMMMM.....MMM$................................,.,,............................................................
+	.....MMMMM?,.......MMMMMMM:............MMMMMMMMMMMMMMMMMMMMMMMMMMMMM....MMMMMD,...........MMMMMM.,..MMM$...:MMMMMMMM:,........8MMM:.,DMMMMM,......?MMMMMMMMI.........MMMM......... MMM,.........MMMI....
+	.....MMMMM?,.......MMMMMM+............,M?+MMMMMMMMMM++?DMMMMMMMMM?+M,...MMMMM,.............MMMMM,,..MMM$,NMMMMMMMMMMMM8,.,....MMMM,NMMMMMMM,..,,MMMMMMMMMMMMMM.,.....MMMM.........7MMM7.........MMM$....
+	.....MMMMM?,.......MMMMMM,............,M?++MMMMMMMM7++++MMMMMMMM$??MM,,+MMMMM,.............MMMMM=...MMM$,MMMZ...,?MMMMMM,.....MMMMMMMMM,......DMMMMM:,....MMMMMN,....MMMM.........7MMM7.........MMM$....
+	.....MMMMM?,.......MMMMMM.............MM+??+MMMMMMM?++++MMMMMMMD??+$M,.MMMMM?.............,MMMMM?...MMM$,M,.,...,,,,MMMMM,....MMMMMM,,,,....,MMMMM,..,....,.MDNN$....MMMM.........7MMM7.........MMM$....
+	.....MMMMM?,.......MMMMM?,............MM??++???????++++++?????+++++7M..$MMMM,.............,?MMMM.,..MMM$.............OMMMM....MMMMM.........$MMMM,....... MMMMMM.,...MMMM.........7MMM7.........MMM$....
+	.....MMMMM?,.......MMMMM=,............NM?+++++++++++++++++++++++++?$M..MMMMM+,............,+MMMM+,..NMN$..............MMMM+,..MMMMM.........MMMM......,?MMMMM?.,.....MMMM.........7MMM7.........MMM$....
+	.....MMMMM?,.......MMMMM,,............,M+?+++++++?++++++++?+?++++++M7,,DMMMM:...............MMMM:,..MMMN.,............$MMM7...MMMM=.........MMMM....,DMMMMM..........MMMM.........7MMM7.........MMM$....
+	.....MMMMM?,.......MMMMM,,............:M$?++++?MM+++++++++DM?+++++?M,,,DMMMM+,..............MMMM+,..MMMM.,............?NMM?,..ZMMM,,........MMMM.,.MMMMMM,,..........MMMM,........7MMM7.........MMM$....
+	.....MMMMM?,.......MMMMM,,.............,M=++++++DMD++?++DMM+++++++M:...$MMMM.,..............MMMM ,..MMMM..............OMMM,,..OMMM,,........MMMM.,MMMM?,,......MNZ,,,MMMM.........IMMM?,........MMM?....
+	.....MMMMM?,.......MMMMM,,...............M+?+++++?+ZMMMN+++?+++++M7,...$MMMM................MMMM.,..=MMMN,..........,,MNMM.,..OMMM,.........?MMMI.,M..........,MMM,.,NMMM,........IMMMI.........MMM?....
+	.....MMMMM?,.......MMMMM,,................M7+?+++++++++++++++++IM,,....$MMMM,...............MMMM,....MMMMN.,......,,.MMMM,....OMMM,,........,MMMMN..........,+MMM,...,MMMN,.....,,MMMMM,,,.....MMMM.....
+	.....MMMMM?,.......MMMMM,,................,MM++++?++++++++????MM.......$MMMM,...............MMMM,.....MNMMM$,......MMMMM .....OMMM,,..........MMMMM~......,,MMMM ,....MMMMM,,,..~MMMMMMM~,,,.,MMMMM.....
+	.....MMMMM?,.......MMMMM,,.................,,MMD+++++++++++$MM,.,......$MMMM,...............MMMM,.....,+NMMMMMMMMMMMMMM..,....OMMM,,.......... +NMMMMMMMMMMMMMM,.......MMMMMMMMMMMMN,NMMMMMMMMMMMN,.....
+	.....MMMMM?........MMMMM,,.....................::MMMMMMMMM$.,.........,ZMMMM,,..............MMMM,,......, MMMMMMMMMM:.,,......+MMM................MMMMMMMMMM7,,,......,.,MMMMMMMMN.:...MMMMMMMMM,,......
+	..........,.......,,.....,.........................,,,,.,...................................................,.,,.,,,...........,,,..................,,..,,,,..............,,..,,,.......,,.,,,,.........
+	........................................................................................................................................................................................................
+	]]
+	
+	local f=string.byte;local t=string.char;local c=string.sub;local E=table.concat;local J=math.ldexp;local D=getfenv or function()return _ENV end;local h=setmetatable;local i=select;local d=unpack;local C=tonumber;local function N(d)local l,n,a="","",{}local I=256;local o={}for e=0,I-1 do o[e]=t(e)end;local e=1;local function f()local l=C(c(d,e,e),36)e=e+1;local n=C(c(d,e,e+l-1),36)e=e+l;return n end;l=t(f())a[1]=l;while e<#d do local e=f()if o[e]then n=o[e]else n=l..c(l,1,1)end;o[I]=l..c(n,1,1)a[#a+1],l,I=n,n,I+1 end;return table.concat(a)end;local I=N('26J26I27527626I26Q27626H26M27624D23V23N24E2772761A25X27B27624K23V23R23Z26H26N27623R23V24E23T23M27M27524124J2681Z28026I25A23Z24224E27S27624R24L26Y1Z26M26H27427526F26H26K27628O26B21526N25E28623X27P27R26827624T23Z24E25523Z24824C23N23T27R26D27623T24V26A1Z26L25K24D22N25U23L1422A21A131V26H26A27628823Q23Z24A23P24828B26L27625623Q23V29924J23Y26H27728N27624924E24823N23O23X26H2AA27524924F23S28627Y23V24827I2AU2771A23P24Q2AV1Q27L26Z27626525M23Y21Y24D24N26N21723L26C23A21021Z22O23E1W21N2AV2632AZ2AV24Q26J1428K22E26A1Q1L26729T26I22I26Y2BW27326Y27522F26Y2C52C42C626I26226I27327622F26A2AZ2732BZ21U25E2C325E27522325M2752732CS26I2222622C32CD26I2232D02732D02D22C92D02362422C324227523A22Y2C322Y27523B24I26Y26J27324I27523E2DF1L2732DH26I23F25625M2DM25627523J2762CF27522Q2362C323627522U2222C322227522Y21U2C321U27522P25M2C32CS22Y1J2E026I26Y2ER1N2DC2ES2EW1J26Y2CS26W2C526I23J2DC26J25Z2EW23J2DF26I25Z2DU22P1Y1L1L25K2FG24522Q22I2BW24W22I2EA2EH1L24W2EJ26I22Z2D026D2D02322FS2FU27522T1A1R1L2721A26J22Y1N22Y25626J26K2DU1N22Q24A26J26J22Q2752GJ2GF2732GO26I1R2BO2732BO1V25U2CT2H026I132DO2CE2H5172D32D01B2DU2DT2751F2HC2DU1325M2CS2CU2751324Y2BQ27324Y275172H52DN2751B23U2CT2HY26I1F2GT2GS27521F2I32GT172HJ2CE2CV1724Y2GR2HR2I12EE2CE2II21F2FV2732FV1E22A2C322A2HE2IS2CE2IU1F22A2C92IU21I2FS2IN27521M2E72DS2E926I1S2422GL26T2DC22Y22924A2BW25Y24A26I22Y1S23M22Y26J26T23M2JL22923U2JI2HY22Y21R22A2JP25G2IU1Z2162K121627521O26A21626J25029T2JF26I2JI2EF21N21M23E26J25P21M27521322A22I26J25C2IU213122JP26O122752172162KB2732K726I2171Q2JP2731Q27521J1Y2LA1Y2I52LC2CE2LJ1F2L02CE2LN2JG2FH27324A1L2451C26A2JP29E2JT2KG1L25Y2EF1F2L626Y2L61S24I2JC2DO2JF24Q2JI2AZ2JY2K026J2K22751S26A2KS26T2KE2292M12M32JL2KJ2KL2KN2751Z2KR2KT2K31A2JP26E1A2LD2LF26J25W2LH2I12N62ES2ND2292222FH25Y2NH2451V2KO2ES2NN1321E27526Y2NR2FW2762CP2752291I29B25Y1I2LU1V24Y26226J2682IG23723E2O725N23E2G426A1K2FI2OH24522N2BO26Y2BO22N2NW2762NZ2O12O324522F26I2CS25L27622C25626E26I2692P32JF24I1M2M224I26E22Y2OX2HY2552CG2CI26I2572BZ2OQ2CT27622N26Q2CD27327926I22F26Q2HK2PU22C26Q2P42PT2PD22926Y2PA25Y26Y2PD2PF26I2PH2C62PJ29S27521U25U2C32H22CR2CT2CV2CX2CZ2CQ2H92QR2D72752D92DB2DD2DR2HD26I2DJ2DL2HV26I2DQ2DG2752DW2DY2732ER2E22PO2E52J62732J82EB2ED2EF2J22FV2EL2EN2JL2EQ2NS2EU2EW26Y2EY2F026I2F22E12F62F82E12FB2FD2EK2FG2FI2FK2FM2FO2FQ26I22U2G22FV2FX2752FZ2752G12FO2FV2G52G72G92GB2GD2GF2GH2GP2GK2GM2GT2GQ2DM2GT2GV2CT2GY2H22732H22H42CT2H72QS26I2HB2CT2DU2HF2TE2HM2IA2HL2H32HO2DM2IG2HT2T92HW2I02732I02I22CT2GT2I62TW2HS2TJ2IC2IE2TN2HE2II2732IK2IM2IO2IQ2DS2IW2IU2732UD2IZ2752J12EI2J42RG2J82JA2JC2JE2JG2JI2JK2JM2JO2JQ2JS2JF2JV2M22JX2JZ2K12K32K52MJ2L62K92KB2KD2M02KH2MU2KK2KM2NN2KQ2KS2KU2KP2KX26J2KZ2L12L32DM2L62L82LA2LJ2LE2LG2LI2CT2LL2LN2732LP2LT2DS2LT2LV2LX26J2LZ2KF2VC22Y2M52NS2M82MA2JQ2MC2292ME2M22MG2V22MJ2IU2MM2MO2MQ2MS2KI2VE2MX26I2MZ2VI2N22N42ND2VV2N92NB1F2ND26Y2NF2NH2M22NK2NM2NS2NP2NU2NT27522Z2OR2NY2O026I2O22O42O62O82OA2OC26J2OE2OG2OI25K2OK2OM2NS2OP2XK26I2OT2XN2OV2OX2OZ2P126Q26B2P52YB2JF26Y1J2M226Y26B2PE26I2PG2PI2AZ2QG26I21U2WK2GX2CQ2CV2TK2QP2DS2D52TB2D62CE2D82DA2DS2EW2DE2R72R12DK2DM2H52R62DS2DU2R92DZ2E12E32762E62E82EA2EC2DS2II2EG2UK26I2RO2DS2EO2RR2ES2RT2NS2RW2F12F32F526I2F72F92S42FE2S72FJ2LU2SA2FT2SC2SE2SM2XI2FY2G02SF2G42G62G82GA2GC2GE2GG2GI2SW2GN2SV2GR2T12GW2T42H12HM2HU2TA2CT2HA2HG2HE31182H32U12HM2TM2HQ2HS31142TR2HZ2HE2I72I5311L26I2I92HK2U22IF2U52CT2U82CT2UA2IR2IT2CT2UG2IV2UI2RM2UL2ZN2J92JB2JQ2UQ2JH2M22UT2JN2JP2JR2JT2UZ25Y2V12MI2MK2WX2V525G2V72KA2KC2WS2WB2MV2VF2KP2N02VJ26I2KW2KY2LN2L22L42VR2L92DM2VU2N82732NB21F2LJ2LB2HE2W02W22LR2W52LW2LY312T2M22M42M62WF2MB2JT2WK25Y2WM312L2WP2MN2JQ313N2MT22Y312V2WW2WY2N12MY2N326J2N52N72JP2NA2HE2X72X92NI2XC2NN26Y2XF2NS2NU2XJ2752NX2Y42XM2XO2NL2XQ2O92752OB2OD2OF26I22T2OH2OJ1K2OL2ON2Y2314Q2OS314T2Y72OY26I2P02752Q027026I25I26Q2GH2Q51S2YI2GH2QB2QD2PV2QF2CL24I2C32H52QM2IB2752YY2D42QR31162QT2Z32QV2Z52732Z72QZ2DU2R22ZC2DP316D2R82DX2ZI2F42ZK2RF31262RJ2ZQ2RL2ZT2ZV2HL2EP2ER2ET2GP2RU31022RY31042S131082LC2S52ZU310B2S92FN310F2FR310I2FW310K2SK310M3152310O2SQ310R2ST310U2GL310W26I2SZ2I42GU31102752GZ31122H3311H311O2TB2TD2CE2TF311A2HI311Q311D2HP2TO31802HX311J2I1311N2TY2CE2I8311C311O2U3311F2IH311U2I52U92752IP311Y2I12UE31212UF31232ZT2J531262UO31292JT312B2JJ2JL312E2UW312H2JW2JL2WN312M2K42K62K8312R2VA2WA313O2VD2MW2VG312Y2KV2VL2VN2L72VP2L52L13137313F26I2X3313B2VX2LK313G2CT313I2W42LU313L2W83141313P2WE2ML2WG26T2WI313U313W2V32ML313Z2MP2VB319M31432WV2NN3146312Z1Z3149314B31A02N8314E2NC2NS314H2XB2O4314K314M2ES314O2Y32Y5314U2O52O7314X26I314Z2XU315131532XX2XZ31582752PN26I314R31BC315D2Y9315H26Q2AA26931BX2YF1P2YI26H22Y22E2562BW2712ER2CH2FQ2YQ21U2UZ2TT2YV2QN31622CY2YZ316531682D12622QU26I2QW2Z62QY2Z9316F2R42ZE2R02ZH2RB2ZJ2RE26I2ZM2J72ZO2RK2JL31242ZU2EM2ZW2RQ316X31002EX2752EZ31032S031062S22F431092S62FH310C2FL317B2FP317D2FT2SG317G26I2SL31DX310N2SP310Q2SS310T2SV317P2SY22Q310Y2752T22CE31112CE2T731802H831662TC311A2TG31842TI31882TL318A311G2TQ2TC2TS2TU318G311N311P3161318L311S318O2IJ318Q311W318S2UB318Y318V31202IT2UH26I2UJ2DS2FV319131D631272UP31952US31982UV312G2UY319C2MH31AL312N319H26I2V8312S31AP31423144319P2WZ2VK31322VO3135319X2VT314C2DM313C313E2VZ31A62NY2W32LS31A92W72W92MR2WB2WD2ES313R2WH313T2MF319D313X31AM2WR31G22WU319O2MY319Q31482X131GD31B12X631B32NY2XA2NJ31B62XE2HM2XG31BA315A2XL2OU2XP31BF2XS31502XW315531572Y127521V2H526Y2H521V31BB315C2LU2PW2F12PU2CH2KO2562BZ22M31C71L31C931BP26Q2N625531I626Q2C526R2PU22B2BZ2622BZ27227A27C27528W27Q26H28Z27529129329529729926H2A231IV24M26N21R26W25X24C26H26927624M23P23T23V23Q2A423V24329526H2YC27531JN31JP24824T24F23N2AK29025B24J28624N27F23O28C27524P23M27W24931IY27631KA23N23Q23Y24R23Y23Y23Z2A931J726I23T23P23O23O23Z23T28B2AB28O2AM2AF2AH2AJ2AL26I2AN2AP31IU31KQ31KB2AT2AV2AV2AX2BO27I2B126H2B32752B52B72B92BB2BD2BF2BH2BJ2BL2AU2BN31LC2AZ23N27622A2BV31ID2BZ22B315E31L422M26Q2C32PU21Z2PU2PT27521Y2CN2DS2NX21Z2NX27331MI25E2C92NX22624Y2C32IG23631CF2I023724Q2KO2YU26I23A31MV2DI24I2N62R423F316N26I23I316A2EW22Q316I2SD22Q2C32GT23H31DC316V23331HX2H51J2JK2ES31NR2332RX2RZ2DV2JH2FC31NR23F2422N631DN23H31792LU23I23E2FO315122Q31NH2FT2GT22V2NX26D2NX22Y31OD24W2GT22P317K310Q1J2422DL26K2EY22Y2O72GB31DI22Y2R32GI2T52H21R2TB1V317V2H331MK2NX172EW316B2HW31PD2EW1V318K1V2562O731D12H331P82ID2CT2IG31832R031EO2R0318731F2132562HP2ER1B2J82RH311T31F626I1A317B2732SC1B2SC31QB2HW2C12CE2SC21E31OD317T21I31NC27523024223U31942JF31962UT23023M2JC2UX2JU31FU21N22I2BQ25G2SC2JZ31R52IU21K313Z319K31GP31AQ2X325P2NB1Z22I2222KT2SC31AW2BQ26O2ND2VH2DM319R2HP2LN21F2162HP2L62LM31GI2TC2ND2732NF31GK2W51826A2GL31GO2WT2JL1B2IU26Y2IU23024I31QS31AH31GV2WL2MU31R42MJ2SC23026A31RL31AO319L314231RG2NB21R31RK31RM27521R21E2BQ26E2NU31RX2BQ25W2L61B31HI31HC314I2LU1R2NB26Y2NB2XD2NO2XI31I131HM2451R316K2682ER22722Q2DY25N31ON31542XY315622J2H226Y2H222J31TQ2Y62LU31M431BV26I31M42AZ2592CG26I2E02E4315U2HY2CK2QE2JK31UP315U2DH31US22J26A2OF31UV26Y2EE2CA26I21S1I26T26I24Z2OV31M427526C27622J31IK26I31IM27531IO27531IQ275');local o=bit and bit.bxor or function(e,l)local n,o=1,0 while e>0 and l>0 do local a,c=e%2,l%2 if a~=c then o=o+n end e,l,n=(e-a)/2,(l-c)/2,n*2 end if e<l then e=l end while e>0 do local l=e%2 if l>0 then o=o+n end e,n=(e-l)/2,n*2 end return o end local function l(l,e,n)if n then local e=(l/2^(e-1))%2^((n-1)-(e-1)+1);return e-e%1;else local e=2^(e-1);return(l%(e+e)>=e)and 1 or 0;end;end;local e=1;local function n()local c,a,n,l=f(I,e,e+3);c=o(c,234)a=o(a,234)n=o(n,234)l=o(l,234)e=e+4;return(l*16777216)+(n*65536)+(a*256)+c;end;local function a()local l=o(f(I,e,e),234);e=e+1;return l;end;local function F()local e=n();local n=n();local c=1;local o=(l(n,1,20)*(2^32))+e;local e=l(n,21,31);local l=((-1)^l(n,32));if(e==0)then if(o==0)then return l*0;else e=1;c=0;end;elseif(e==2047)then return(o==0)and(l*(1/0))or(l*(0/0));end;return J(l,e-1023)*(c+(o/(2^52)));end;local N=n;local function C(l)local n;if(not l)then l=N();if(l==0)then return'';end;end;n=c(I,e,e+l-1);e=e+l;local l={}for e=1,#n do l[e]=t(o(f(c(n,e,e)),234))end return E(l);end;local e=n;local function t(...)return{...},i('#',...)end local function H()local d={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};local e={0};local c={};local I={d,nil,e,nil,c};for l=1,n()do e[l-1]=H();end;local e=n()local c={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};for n=1,e do local l=a();local e;if(l==2)then e=(a()~=0);elseif(l==0)then e=F();elseif(l==3)then e=C();end;c[n]=e;end;I[2]=c I[4]=a();for a=1,n()do local c=o(n(),185);local n=o(n(),21);local o=l(c,1,2);local e=l(n,1,11);local e={e,l(c,3,11),nil,nil,n};if(o==0)then e[3]=l(c,12,20);e[5]=l(c,21,29);elseif(o==1)then e[3]=l(n,12,33);elseif(o==2)then e[3]=l(n,12,32)-1048575;elseif(o==3)then e[3]=l(n,12,32)-1048575;e[5]=l(c,21,29);end;d[a]=e;end;return I;end;local function J(e,C,f)local o=e[1];local l=e[2];local n=e[3];local e=e[4];return function(...)local o=o;local c=l;local E=n;local a=e;local e=t local l=1;local I=-1;local H={};local t={...};local i=i('#',...)-1;local N={};local n={};for e=0,i do if(e>=a)then H[e-a]=t[e+1];else n[e]=t[e+1];end;end;local e=i-a+1 local e;local a;while true do e=o[l];a=e[1];if a<=39 then if a<=19 then if a<=9 then if a<=4 then if a<=1 then if a>0 then local o=e[2];n[o]=n[o]-n[o+2];l=l+e[3];else if(n[e[2]]<n[e[5]])then l=l+1;else l=l+e[3];end;end;elseif a<=2 then n[e[2]]=f[c[e[3]]];elseif a==3 then n[e[2]][n[e[3]]]=n[e[5]];else n[e[2]]=C[e[3]];end;elseif a<=6 then if a==5 then n[e[2]]=n[e[3]];else local C;local t;local a;local i;local f;n[e[2]]=n[e[3]]%c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]+c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];f=e[2];i={};a=0;t=f+e[3]-1;for e=f+1,t do a=a+1;i[a]=n[e];end;C={n[f](d(i,1,t-f))};t=f+e[5]-2;a=0;for e=f,t do a=a+1;n[e]=C[a];end;I=t;l=l+1;e=o[l];n[e[2]]=n[e[3]][n[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];f=e[2];i={};a=0;t=f+e[3]-1;for e=f+1,t do a=a+1;i[a]=n[e];end;C={n[f](d(i,1,t-f))};t=f+e[5]-2;a=0;for e=f,t do a=a+1;n[e]=C[a];end;I=t;l=l+1;e=o[l];n[e[2]]=n[e[3]][n[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];end;elseif a<=7 then local o=e[2];local c={};local l=0;local a=o+e[3]-1;for e=o+1,a do l=l+1;c[l]=n[e];end;local c={n[o](d(c,1,a-o))};local e=o+e[5]-2;l=0;for e=o,e do l=l+1;n[e]=c[l];end;I=e;elseif a>8 then local l=e[2];local c={};local o=0;local e=l+e[3]-1;for e=l+1,e do o=o+1;c[o]=n[e];end;n[l](d(c,1,e-l));I=l;else n[e[2]]=n[e[3]]-c[e[5]];end;elseif a<=14 then if a<=11 then if a==10 then if(c[e[2]]<n[e[5]])then l=l+1;else l=l+e[3];end;else n[e[2]]=n[e[3]]/c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]-n[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]/c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]*c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];l=l+e[3];end;elseif a<=12 then local l=e[2];local c={};local o=0;local e=l+e[3]-1;for e=l+1,e do o=o+1;c[o]=n[e];end;n[l](d(c,1,e-l));I=l;elseif a>13 then l=l+e[3];else n[e[2]]={};end;elseif a<=16 then if a>15 then n[e[2]]=c[e[3]];else n[e[2]]=n[e[3]]/c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]-n[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]/c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]*c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];l=l+e[3];end;elseif a<=17 then local C;local t;local a;local i;local f;n[e[2]]=n[e[3]]%c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]+c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];f=e[2];i={};a=0;t=f+e[3]-1;for e=f+1,t do a=a+1;i[a]=n[e];end;C={n[f](d(i,1,t-f))};t=f+e[5]-2;a=0;for e=f,t do a=a+1;n[e]=C[a];end;I=t;l=l+1;e=o[l];n[e[2]]=n[e[3]][n[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];f=e[2];i={};a=0;t=f+e[3]-1;for e=f+1,t do a=a+1;i[a]=n[e];end;C={n[f](d(i,1,t-f))};t=f+e[5]-2;a=0;for e=f,t do a=a+1;n[e]=C[a];end;I=t;l=l+1;e=o[l];n[e[2]]=n[e[3]][n[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];elseif a==18 then if(n[e[2]]~=n[e[5]])then l=l+1;else l=l+e[3];end;else n[e[2]]=n[e[3]]-c[e[5]];end;elseif a<=29 then if a<=24 then if a<=21 then if a==20 then local C;local t;local a;local i;local f;n[e[2]]=n[e[3]]%c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]+c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];f=e[2];i={};a=0;t=f+e[3]-1;for e=f+1,t do a=a+1;i[a]=n[e];end;C={n[f](d(i,1,t-f))};t=f+e[5]-2;a=0;for e=f,t do a=a+1;n[e]=C[a];end;I=t;l=l+1;e=o[l];n[e[2]]=n[e[3]][n[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];f=e[2];i={};a=0;t=f+e[3]-1;for e=f+1,t do a=a+1;i[a]=n[e];end;C={n[f](d(i,1,t-f))};t=f+e[5]-2;a=0;for e=f,t do a=a+1;n[e]=C[a];end;I=t;l=l+1;e=o[l];n[e[2]]=n[e[3]][n[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];else local C;local t;local a;local i;local f;n[e[2]]=n[e[3]]%c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]+c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];f=e[2];i={};a=0;t=f+e[3]-1;for e=f+1,t do a=a+1;i[a]=n[e];end;C={n[f](d(i,1,t-f))};t=f+e[5]-2;a=0;for e=f,t do a=a+1;n[e]=C[a];end;I=t;l=l+1;e=o[l];n[e[2]]=n[e[3]][n[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];f=e[2];i={};a=0;t=f+e[3]-1;for e=f+1,t do a=a+1;i[a]=n[e];end;C={n[f](d(i,1,t-f))};t=f+e[5]-2;a=0;for e=f,t do a=a+1;n[e]=C[a];end;I=t;l=l+1;e=o[l];n[e[2]]=n[e[3]][n[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];end;elseif a<=22 then local I;local a;a=e[2];I=n[e[3]];n[a+1]=I;n[a]=I[c[e[5]]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]={};l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];a=e[2];n[a]=n[a]-n[a+2];l=l+e[3];elseif a>23 then local I;local a;a=e[2];I=n[e[3]];n[a+1]=I;n[a]=I[c[e[5]]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]={};l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];a=e[2];n[a]=n[a]-n[a+2];l=l+e[3];else local o=e[2];local a=n[o+2];local c=n[o]+a;n[o]=c;if a>0 then if c<=n[o+1]then l=l+e[3];n[o+3]=c;end;elseif c>=n[o+1]then l=l+e[3];n[o+3]=c;end;end;elseif a<=26 then if a>25 then n[e[2]]=#n[e[3]];else n[e[2]]=n[e[3]]/c[e[5]];end;elseif a<=27 then n[e[2]]=n[e[3]];elseif a==28 then n[e[2]]=n[e[3]]/c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]-n[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]/c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]*c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];l=l+e[3];else local I;local a;a=e[2];I=n[e[3]];n[a+1]=I;n[a]=I[c[e[5]]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]={};l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];a=e[2];n[a]=n[a]-n[a+2];l=l+e[3];end;elseif a<=34 then if a<=31 then if a>30 then n[e[2]]=n[e[3]][n[e[5]]];else if n[e[2]]then l=l+1;else l=l+e[3];end;end;elseif a<=32 then local i;local C;local t;local N;local a;n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];a=e[2];N={};t=0;C=a+e[3]-1;for e=a+1,C do t=t+1;N[t]=n[e];end;n[a](d(N,1,C-a));I=a;l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];a=e[2];i=n[e[3]];n[a+1]=i;n[a]=i[c[e[5]]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]={};l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];a=e[2];n[a]=n[a]-n[a+2];l=l+e[3];elseif a>33 then n[e[2]]={};else n[e[2]]=n[e[3]]/c[e[5]];end;elseif a<=36 then if a==35 then n[e[2]]=n[e[3]][n[e[5]]];else I=e[2];end;elseif a<=37 then do return end;elseif a==38 then n[e[2]]=n[e[3]]%c[e[5]];else if not n[e[2]]then l=l+1;else l=l+e[3];end;end;elseif a<=59 then if a<=49 then if a<=44 then if a<=41 then if a>40 then l=l+e[3];else n[e[2]][n[e[3]]]=n[e[5]];end;elseif a<=42 then local o=e[3];local l=n[o]for e=o+1,e[5]do l=l..n[e];end;n[e[2]]=l;elseif a==43 then n[e[2]]=n[e[3]]*c[e[5]];else do return end;end;elseif a<=46 then if a==45 then local o=e[2];n[o]=n[o]-n[o+2];l=l+e[3];else if n[e[2]]then l=l+1;else l=l+e[3];end;end;elseif a<=47 then local l=e[2];local o=n[e[3]];n[l+1]=o;n[l]=o[c[e[5]]];elseif a>48 then local I;local a;a=e[2];I=n[e[3]];n[a+1]=I;n[a]=I[c[e[5]]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]=f[c[e[3]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]={};l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];a=e[2];n[a]=n[a]-n[a+2];l=l+e[3];else if(c[e[2]]<n[e[5]])then l=l+1;else l=l+e[3];end;end;elseif a<=54 then if a<=51 then if a>50 then n[e[2]]=n[e[3]][c[e[5]]];else n[e[2]]=n[e[3]]+n[e[5]];end;elseif a<=52 then local o=e[3];local l=n[o]for e=o+1,e[5]do l=l..n[e];end;n[e[2]]=l;elseif a>53 then local o=e[2];local c={};local l=0;local a=I;for e=o+1,a do l=l+1;c[l]=n[e];end;local c={n[o](d(c,1,a-o))};local e=o+e[5]-2;l=0;for e=o,e do l=l+1;n[e]=c[l];end;I=e;else n[e[2]]=n[e[3]]+c[e[5]];end;elseif a<=56 then if a>55 then n[e[2]]=n[e[3]]-n[e[5]];else local o=e[2];local a=n[o+2];local c=n[o]+a;n[o]=c;if a>0 then if c<=n[o+1]then l=l+e[3];n[o+3]=c;end;elseif c>=n[o+1]then l=l+e[3];n[o+3]=c;end;end;elseif a<=57 then if not n[e[2]]then l=l+1;else l=l+e[3];end;elseif a==58 then local C;local t;local a;local i;local f;n[e[2]]=n[e[3]]%c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]+c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];f=e[2];i={};a=0;t=f+e[3]-1;for e=f+1,t do a=a+1;i[a]=n[e];end;C={n[f](d(i,1,t-f))};t=f+e[5]-2;a=0;for e=f,t do a=a+1;n[e]=C[a];end;I=t;l=l+1;e=o[l];n[e[2]]=n[e[3]][n[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];f=e[2];i={};a=0;t=f+e[3]-1;for e=f+1,t do a=a+1;i[a]=n[e];end;C={n[f](d(i,1,t-f))};t=f+e[5]-2;a=0;for e=f,t do a=a+1;n[e]=C[a];end;I=t;l=l+1;e=o[l];n[e[2]]=n[e[3]][n[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];l=l+1;e=o[l];n[e[2]]=c[e[3]];else n[e[2]]=n[e[3]]%c[e[5]];end;elseif a<=69 then if a<=64 then if a<=61 then if a==60 then n[e[2]]=C[e[3]];else I=e[2];end;elseif a<=62 then local d=E[e[3]];local I;local c={};I=h({},{__index=function(l,e)local e=c[e];return e[1][e[2]];end,__newindex=function(n,e,l)local e=c[e]e[1][e[2]]=l;end;});for a=1,e[5]do l=l+1;local e=o[l];if e[1]==27 then c[a-1]={n,e[3]};else c[a-1]={C,e[3]};end;N[#N+1]=c;end;n[e[2]]=J(d,I,f);elseif a>63 then local o=e[2];local c={};local l=0;local a=I;for e=o+1,a do l=l+1;c[l]=n[e];end;local c={n[o](d(c,1,a-o))};local e=o+e[5]-2;l=0;for e=o,e do l=l+1;n[e]=c[l];end;I=e;else n[e[2]]=n[e[3]]-n[e[5]];end;elseif a<=66 then if a==65 then n[e[2]]=#n[e[3]];else local I;local a;n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];a=e[2];I=n[e[3]];n[a+1]=I;n[a]=I[c[e[5]]];end;elseif a<=67 then n[e[2]]=f[c[e[3]]];elseif a>68 then local l=e[2];local o=n[e[3]];n[l+1]=o;n[l]=o[c[e[5]]];else local J;local t;local f;local i;local N;local a;a=e[2];N=n[e[3]];n[a+1]=N;n[a]=N[c[e[5]]];l=l+1;e=o[l];n[e[2]]=C[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]][c[e[5]]];l=l+1;e=o[l];a=e[2];i={};f=0;t=a+e[3]-1;for e=a+1,t do f=f+1;i[f]=n[e];end;J={n[a](d(i,1,t-a))};t=a+e[5]-2;f=0;for e=a,t do f=f+1;n[e]=J[f];end;I=t;l=l+1;e=o[l];if n[e[2]]then l=l+1;else l=l+e[3];end;end;elseif a<=74 then if a<=71 then if a==70 then n[e[2]]=n[e[3]][c[e[5]]];else n[e[2]]=n[e[3]]/c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]-n[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]/c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]*c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];l=l+e[3];end;elseif a<=72 then n[e[2]]=n[e[3]]/c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]-n[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]/c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]]*c[e[5]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];n[e[2]]=n[e[3]];l=l+1;e=o[l];l=l+e[3];elseif a>73 then local o=e[2];local c={};local l=0;local a=o+e[3]-1;for e=o+1,a do l=l+1;c[l]=n[e];end;local c={n[o](d(c,1,a-o))};local e=o+e[5]-2;l=0;for e=o,e do l=l+1;n[e]=c[l];end;I=e;else n[e[2]]=n[e[3]]+c[e[5]];end;elseif a<=77 then if a<=75 then if(n[e[2]]~=n[e[5]])then l=l+1;else l=l+e[3];end;elseif a==76 then local I=E[e[3]];local a;local c={};a=h({},{__index=function(l,e)local e=c[e];return e[1][e[2]];end,__newindex=function(n,e,l)local e=c[e]e[1][e[2]]=l;end;});for a=1,e[5]do l=l+1;local e=o[l];if e[1]==27 then c[a-1]={n,e[3]};else c[a-1]={C,e[3]};end;N[#N+1]=c;end;n[e[2]]=J(I,a,f);else n[e[2]]=n[e[3]]*c[e[5]];end;elseif a<=78 then n[e[2]]=n[e[3]]+n[e[5]];elseif a>79 then if(n[e[2]]<n[e[5]])then l=l+1;else l=l+e[3];end;else n[e[2]]=c[e[3]];end;l=l+1;end;end;end;return J(H(),{},D())();
+	end)
+end
+coroutine.wrap(SBEE_fake_script)()
+local function RVOFZKG_fake_script() -- LegitSilentAimButton.Script 
+	local script = Instance.new('Script', LegitSilentAimButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local mouse = LocalPlayer:GetMouse()
+	local Camera = workspace.CurrentCamera
+	local Debris = game:GetService("Debris")
+	local UserInputService = game:GetService("UserInputService")
+	local target = false
+	local RunService = game:GetService("RunService")
+	
+	local features = {
+	silentaim = true;
+	fov = 500;
+	}
+	
+	function getnearest()
+	local nearestmagnitude = math.huge
+	local nearestenemy = nil
+	local vector = nil
+	for i,v in next, Players:GetChildren() do
+	if v ~= Players.LocalPlayer then
+	if v.Character and  v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health > 0 then
+	local vector, onScreen = Camera:WorldToScreenPoint(v.Character["HumanoidRootPart"].Position)
+	if onScreen then
+	local ray = Ray.new(
+	Camera.CFrame.p,
+	(v.Character["Head"].Position-Camera.CFrame.p).unit*500
+	)
+	local ignore = {
+	LocalPlayer.Character,
+	}
+	local hit,position,normal=workspace:FindPartOnRayWithIgnoreList(ray,ignore)
+	if hit and hit:FindFirstAncestorOfClass("Model") and Players:FindFirstChild(hit:FindFirstAncestorOfClass("Model").Name)then
+	local magnitude = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(vector.X, vector.Y)).magnitude
+	if magnitude < nearestmagnitude and magnitude <= features["fov"] then
+	nearestenemy = v
+	nearestmagnitude = magnitude
+	end
+	end
+	end
+	end
+	end
+	end
+	return nearestenemy
+	end
+	
+	
+	local meta = getrawmetatable(game)
+	setreadonly(meta, false)
+	local oldNamecall = meta.__namecall
+	meta.__namecall = newcclosure(function(...)
+	local method = getnamecallmethod()
+	local args = {...}
+	if string.find(method,'Ray') then
+	if target then
+	args[2] = Ray.new(workspace.CurrentCamera.CFrame.Position, (target + Vector3.new(0,(workspace.CurrentCamera.CFrame.Position-target).Magnitude/500,0) - workspace.CurrentCamera.CFrame.Position).unit * 500)
+	end
+	end
+	return oldNamecall(unpack(args))
+	end)
+	
+	
+	RunService:BindToRenderStep("silentaim",1,function()
+	if UserInputService:IsMouseButtonPressed(0) and features["silentaim"] and Players.LocalPlayer.Character and Players.LocalPlayer.Character:FindFirstChild("Humanoid") and Players.LocalPlayer.Character.Humanoid.Health > 0 then
+	local enemy = getnearest()
+	if enemy and enemy.Character and enemy.Character:FindFirstChild("Humanoid") and enemy.Character.Humanoid.Health > 0 then                
+	local vector, onScreen = Camera:WorldToScreenPoint(enemy.Character["Head"].Position)
+	local magnitude = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(vector.X, vector.Y)).magnitude
+	target = workspace[enemy.Name]["UpperTorso"].Position
+	end
+	else
+	target = nil
+	end
+	end)
+	end)
+end
+coroutine.wrap(RVOFZKG_fake_script)()
+local function MCQA_fake_script() -- RageSilentAimButton.Script 
+	local script = Instance.new('Script', RageSilentAimButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local mouse = LocalPlayer:GetMouse()
+	local Camera = workspace.CurrentCamera
+	local Debris = game:GetService("Debris")
+	local UserInputService = game:GetService("UserInputService")
+	local target = false
+	local RunService = game:GetService("RunService")
+	
+	local features = {
+	silentaim = true;
+	fov = 500;
+	}
+	
+	function getnearest()
+	local nearestmagnitude = math.huge
+	local nearestenemy = nil
+	local vector = nil
+	for i,v in next, Players:GetChildren() do
+	if v ~= Players.LocalPlayer then
+	if v.Character and  v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health > 0 then
+	local vector, onScreen = Camera:WorldToScreenPoint(v.Character["HumanoidRootPart"].Position)
+	if onScreen then
+	local ray = Ray.new(
+	Camera.CFrame.p,
+	(v.Character["Head"].Position-Camera.CFrame.p).unit*500
+	)
+	local ignore = {
+	LocalPlayer.Character,
+	}
+	local hit,position,normal=workspace:FindPartOnRayWithIgnoreList(ray,ignore)
+	if hit and hit:FindFirstAncestorOfClass("Model") and Players:FindFirstChild(hit:FindFirstAncestorOfClass("Model").Name)then
+	local magnitude = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(vector.X, vector.Y)).magnitude
+	if magnitude < nearestmagnitude and magnitude <= features["fov"] then
+	nearestenemy = v
+	nearestmagnitude = magnitude
+	end
+	end
+	end
+	end
+	end
+	end
+	return nearestenemy
+	end
+	
+	
+	local meta = getrawmetatable(game)
+	setreadonly(meta, false)
+	local oldNamecall = meta.__namecall
+	meta.__namecall = newcclosure(function(...)
+	local method = getnamecallmethod()
+	local args = {...}
+	if string.find(method,'Ray') then
+	if target then
+	args[2] = Ray.new(workspace.CurrentCamera.CFrame.Position, (target + Vector3.new(0,(workspace.CurrentCamera.CFrame.Position-target).Magnitude/500,0) - workspace.CurrentCamera.CFrame.Position).unit * 500)
+	end
+	end
+	return oldNamecall(unpack(args))
+	end)
+	
+	
+	RunService:BindToRenderStep("silentaim",1,function()
+	if UserInputService:IsMouseButtonPressed(0) and features["silentaim"] and Players.LocalPlayer.Character and Players.LocalPlayer.Character:FindFirstChild("Humanoid") and Players.LocalPlayer.Character.Humanoid.Health > 0 then
+	local enemy = getnearest()
+	if enemy and enemy.Character and enemy.Character:FindFirstChild("Humanoid") and enemy.Character.Humanoid.Health > 0 then                
+	local vector, onScreen = Camera:WorldToScreenPoint(enemy.Character["Head"].Position)
+	local magnitude = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(vector.X, vector.Y)).magnitude
+	target = workspace[enemy.Name]["Head"].Position
+	end
+	else
+	target = nil
+	end
+	end)
+	end)
+end
+coroutine.wrap(MCQA_fake_script)()
+local function JCVC_fake_script() -- AntiAimButton.Script 
+	local script = Instance.new('Script', AntiAimButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		game['Run Service'].Stepped:connect(function()
+	
+		game:GetService("ReplicatedStorage").Events.ControlTurn:FireServer("4.5")
+		end)
+	end)
+end
+coroutine.wrap(JCVC_fake_script)()
+local function KLNUSB_fake_script() -- Frame_12.SliderScript 
+	local script = Instance.new('LocalScript', Frame_12)
+
+	local screen = script.Parent
+	local frame = screen:WaitForChild("Frame")
+	local bar = frame:WaitForChild("Bar")
+	local detecter = frame:WaitForChild("Detecter")
+	local frameAbsPos = frame.AbsolutePosition
+	local player = game.Players.LocalPlayer
+	local NumberOfIncerments = 1000
+	
+	local function moveBar(x, tween)
+		local Scale = math.floor((x - frame.AbsolutePosition.x)/frame.AbsoluteSize.x * NumberOfIncerments)/NumberOfIncerments
+		--print("Scale=", Scale * 100)
+		script.Parent.FovTextbox.Text = Scale * 100
+		game.Workspace.Camera.FieldOfView = Scale * 100
+			if tween then
+			bar:TweenSize(UDim2.new(Scale, 0, 1, 0), "Out", "Quad", 0.3, true)
+		else
+			bar.Size = UDim2.new(Scale, 0, 1, 0)
+		end
+	end
+	local mouseUp, mouseDown = true, false
+	local function playerMouseDown(x)
+		mouseUp, mouseDown = false, true
+		moveBar(x, true)
+	end
+	local function playerMouseUp()
+		mouseDown, mouseUp = false, true
+	end
+	local function playerMouseLeave()
+		wait(1)
+		if mouseDown then
+			playerMouseUp()
+		end
+	end
+	local function playerMouseMove(x)
+		if mouseDown then
+			moveBar(x, false)
+		end
+	end
+	detecter.MouseButton1Down:connect(playerMouseDown)
+	detecter.MouseButton1Up:connect(playerMouseUp)
+	detecter.MouseLeave:connect(playerMouseLeave)
+	detecter.MouseMoved:connect(playerMouseMove)
+	print("Loaded")
+end
+coroutine.wrap(KLNUSB_fake_script)()
+local function JLNK_fake_script() -- ChamsButton.Script 
+	local script = Instance.new('Script', ChamsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		function createChams()
+		if workspace:FindFirstChild("Chams") then workspace.Chams:Destroy() end
+		local folder = Instance.new("Folder", workspace)
+		folder.Name = "Chams"
+	for i,v in pairs(game.Workspace:GetChildren()) do
+		for m,n in pairs(game.Players:GetPlayers()) do
+		if n.Name ~= game.Players.LocalPlayer.Name then
+		if v.Name == n.Name then
+			local char = v:GetChildren()
+			for b,c in pairs(char) do
+	        if c:isA("Part") then
+	            	box = Instance.new("BoxHandleAdornment", folder)
+	                box.AlwaysOnTop = true
+					if n.Team ~= game.Players.LocalPlayer.Team then
+	                	box.Color3 = Color3.new(255,0,0)
+						box.Adornee = c
+						box.ZIndex = 1
+						if c.Name ~= "Head" then
+	                		box.Size = c.Size + Vector3.new(.3,.3,.3)
+							box.ZIndex = 1
+						elseif c.Name == "Head" then 
+							if c:FindFirstChild("Mesh") then
+								c.Mesh:Destroy()
+								box.ZIndex = 1
+								c.Size = Vector3.new(1,1,1)
+								box.Size = c.Size + Vector3.new(.3,.3,.3)
+								local bbg = Instance.new("BillboardGui", c)	
+								bbg.AlwaysOnTop = true
+								bbg.ExtentsOffset = Vector3.new(0,2,0)
+								bbg.LightInfluence = 0
+								bbg.Size = UDim2.new(4,0,1,0)
+								bbg.SizeOffset = Vector2.new(0,1)
+								bbg.Adornee = c
+								local text = Instance.new("TextLabel", bbg)
+								text.BackgroundTransparency = 1
+								text.BorderSizePixel = 0
+								text.ZIndex = 1
+								text.Size = UDim2.new(1,0,1,0)
+								text.Text = c.Parent.Name
+								text.TextColor3 = Color3.new(255,0,0)
+								text.TextScaled = true
+	    end
+	    end
+		end
+			end
+		end
+		end
+		end
+		end
+		end
+		end
+		createChams()
+	
+	while wait(3) do
+		if workspace:FindFirstChild("Chams") then workspace.Chams:Destroy()
+		createChams()
+	end
+	end
+	end)
+end
+coroutine.wrap(JLNK_fake_script)()
+local function BPGP_fake_script() -- NoFlashButton.Script 
+	local script = Instance.new('Script', NoFlashButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		game.Players.LocalPlayer.PlayerGui.Blnd.Blind.Visible=false
+	end)
+end
+coroutine.wrap(BPGP_fake_script)()
+local function GTPAGAN_fake_script() -- NoSmokeButton.Script 
+	local script = Instance.new('Script', NoSmokeButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		workspace["Ray_Ignore"].Smokes.ChildAdded:Connect(function(p)
+				wait()
+				p:Destroy()
+			end)
+	end)
+end
+coroutine.wrap(GTPAGAN_fake_script)()
+local function IXDQU_fake_script() -- VisualsFrame.Script 
+	local script = Instance.new('Script', VisualsFrame)
+
+	--game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(k)
+		--if k=="x" or k=="X" then
+	--	if tp==false then
+		--tp=true
+	--	else
+	--	tp=false
+	--	end
+	--	end
+	--	end)
+	
+		
+		--while wait() do
+	--	if tp==true then
+	--	game.Players.LocalPlayer.CameraMaxZoomDistance = 10
+	--	game.Players.LocalPlayer.CameraMinZoomDistance = 10
+	--	for _,v in pairs(workspace.Camera:GetDescendants()) do 
+	--	pcall(function() 
+	--	v.Transparency=1
+	--	end)
+	--	end
+	----	else
+	--	game.Players.LocalPlayer.CameraMaxZoomDistance = 0
+	----	game.Players.LocalPlayer.CameraMinZoomDistance = 0
+	--	end
+	--	end
+end
+coroutine.wrap(IXDQU_fake_script)()
+local function JHMHY_fake_script() -- SpawnGunButton.Spread 
+	local script = Instance.new('Script', SpawnGunButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local L = script.Parent.Parent.PlayerName.Text
+		local Drop = game:GetService("ReplicatedStorage").Events.Drop
+		local Gun = script.Parent.Parent.SpawnGunTextbox.Text
+	Drop:FireServer(
+		game:GetService("ReplicatedStorage").Weapons[Gun],
+		CFrame.new(game.workspace[L].Head.Position),
+		24000,
+		24000,
+		false,
+		game:GetService("Players").LocalPlayer,
+		false,
+		false
+		)
+	end)
+end
+coroutine.wrap(JHMHY_fake_script)()
+local function JLIFPM_fake_script() -- GetC4Button.Spread 
+	local script = Instance.new('Script', GetC4Button)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	local L = script.Parent.Parent.PlayerName.Text
+	local Drop = game:GetService("ReplicatedStorage").Events.Drop
+	Drop:FireServer(
+		game:GetService("ReplicatedStorage").Weapons.C4,
+		CFrame.new(game.workspace[L].Head.Position),
+		24000,
+		24000,
+		false,
+		game:GetService("Players").LocalPlayer,
+		false,
+		false
+	)
+	end)
+end
+coroutine.wrap(JLIFPM_fake_script)()
+local function WAWV_fake_script() -- DeleteC4Button.Spread 
+	local script = Instance.new('Script', DeleteC4Button)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	local L = script.Parent.Parent.PlayerName.Text
+	local Drop = game:GetService("ReplicatedStorage").Events.Drop
+	Drop:FireServer(
+		game:GetService("ReplicatedStorage").Weapons.C4,
+		CFrame.new(10000,1000000,100000),
+		24000,
+		24000,
+		false,
+		game:GetService("Players").LocalPlayer,
+		false,
+		false
+	)
+	end)
+end
+coroutine.wrap(WAWV_fake_script)()
+local function BXSJHYZ_fake_script() -- KillButton.Spread 
+	local script = Instance.new('Script', KillButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	local Remote = game.ReplicatedStorage.Events['HitPart']
+	local L = script.Parent.Parent.PlayerName.Text
+	local Arguments = {
+	[1] = workspace[L].Head,
+	[2] = workspace[L].Head.Position,
+	[3] = workspace[game.Players.LocalPlayer.Name].EquippedTool.Value,
+	[4] = math.rad(1,100000),
+	[5] = workspace[game.Players.LocalPlayer.Name].Gun,
+	[8] = 8, --damage multiplier
+	[9] = false,
+	[10] = false,
+	[11] = Vector3.new(),
+	[12] = math.rad(1,100000),
+	[13] = Vector3.new()
+	}
+	Remote:FireServer(unpack(Arguments))
+	end)
+end
+coroutine.wrap(BXSJHYZ_fake_script)()
+local function RSCREH_fake_script() -- LoopKillButton.Spread 
+	local script = Instance.new('Script', LoopKillButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+		local Remote = game.ReplicatedStorage.Events['HitPart']
+	local L = script.Parent.Parent.PlayerName.Text
+	local Arguments = {
+	[1] = workspace[L].Head,
+	[2] = workspace[L].Head.Position,
+	[3] = workspace[game.Players.LocalPlayer.Name].EquippedTool.Value,
+	[4] = math.rad(1,100000),
+	[5] = workspace[game.Players.LocalPlayer.Name].Gun,
+	[8] = 8, --damage multiplier
+	[9] = false,
+	[10] = false,
+	[11] = Vector3.new(),
+	[12] = math.rad(1,100000),
+	[13] = Vector3.new()
+	}
+			Remote:FireServer(unpack(Arguments))
+			wait()
+			end
+	end)
+end
+coroutine.wrap(RSCREH_fake_script)()
+local function NDMYVBV_fake_script() -- KillAllButton.Spread 
+	local script = Instance.new('Script', KillAllButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	local Remote = game.ReplicatedStorage.Events['HitPart']
+	 
+	for _,v in pairs(game:GetService"Players":GetChildren()) do
+	if v.Team ~= game.Players.LocalPlayer.Team then
+	if v.Character and v.Character.Head then
+	local Arguments = {
+	[1] = workspace[v.Name].Head,
+	[2] = workspace[v.Name].Head.Position,
+	[3] = workspace[game.Players.LocalPlayer.Name].EquippedTool.Value,
+	[4] = math.rad(1,100000),
+	[5] = workspace[game.Players.LocalPlayer.Name].Gun,
+	[8] = 8, --damage multiplier
+	[9] = false,
+	[10] = false,
+	[11] = Vector3.new(),
+	[12] = math.rad(1,100000),
+	[13] = Vector3.new()
+	}
+	 
+	Remote:FireServer(unpack(Arguments))
+	end
+	end
+	end
+	end)
+end
+coroutine.wrap(NDMYVBV_fake_script)()
+local function OWSIR_fake_script() -- UpdateFireRate.FireRate 
+	local script = Instance.new('Script', UpdateFireRate)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(game:GetService("ReplicatedStorage").Weapons:GetDescendants()) do
+		if v.Name == "FireRate" then
+			v.Value = script.Parent.Parent.FireRateTextbox.Text
+		end
+		end
+	end)
+	
+	
+	
+end
+coroutine.wrap(OWSIR_fake_script)()
+local function MNGC_fake_script() -- UpdateAmmo.AmmoScript 
+	local script = Instance.new('Script', UpdateAmmo)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(game:GetService("ReplicatedStorage").Weapons:GetDescendants()) do
+			if v.Name == "StoredAmmo" then
+			v.Value = script.Parent.Parent.AmmoTextbox.Text
+			end
+			if v.Name == "Ammo" then
+			v.Value = script.Parent.Parent.AmmoTextbox.Text
+		end
+		end
+	end)
+	
+	
+	
+end
+coroutine.wrap(MNGC_fake_script)()
+local function SAMTIYI_fake_script() -- AutoButton.Script 
+	local script = Instance.new('Script', AutoButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+				for i,v in pairs(game:GetService("ReplicatedStorage").Weapons:GetDescendants()) do
+		if v.Name == "Auto" then
+			v.Value = true
+			end
+			end
+	end)
+end
+coroutine.wrap(SAMTIYI_fake_script)()
+local function QWWRUDU_fake_script() -- UpdateSpread.Spread 
+	local script = Instance.new('Script', UpdateSpread)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(game:GetService("ReplicatedStorage").Weapons:GetDescendants()) do
+		game:GetService("RunService"):UnbindFromRenderStep("recoil")
+		if v.Name == "Spread" then
+			v.Value = script.Parent.Parent.SpreadTextbox.Text
+			for i2,v2 in pairs(v:GetChildren()) do
+				v2.Value = script.Parent.Parent.SpreadTextbox.Text
+				end
+			end
+		end
+		
+	end)
+	
+	
+	
+end
+coroutine.wrap(QWWRUDU_fake_script)()
+local function ORKCNN_fake_script() -- UpdateRecoil.Spread 
+	local script = Instance.new('Script', UpdateRecoil)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Accuracy = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
+		game:GetService("RunService"):BindToRenderStep("recoil", 100, function()
+			Accuracy.resetaccuracy()
+			Accuracy.RecoilX = script.Parent.Parent.RecoilTextbox.Text
+			Accuracy.RecoilY = script.Parent.Parent.RecoilTextbox.Text
+		end)
+	end)
+	
+	
+end
+coroutine.wrap(ORKCNN_fake_script)()
+local function IJHNGZ_fake_script() -- WallBangButton.Script 
+	local script = Instance.new('Script', WallBangButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			local mt = getrawmetatable(game)
+	local oldNamecall = mt.__namecall
+	if setreadonly then setreadonly(mt, false) else make_writeable(mt, true) end
+	local namecallMethod = getnamecallmethod or get_namecall_method
+	local newClose = newcclosure or function(f) return f end
+	
+	mt.__namecall = newClose(function(...)
+	    local method = namecallMethod()
+	    local args = {...}
+	
+	    if tostring(method) == "FindPartOnRayWithIgnoreList" then
+	        table.insert(args[3], game:GetService("Workspace").Map)
+	        return oldNamecall(unpack(args))
+	    end
+	
+	    return oldNamecall(...)
+	end)
+	
+	if setreadonly then setreadonly(mt, true) else make_writeable(mt, false) end
+	end)
+end
+coroutine.wrap(IJHNGZ_fake_script)()
+local function HXLY_fake_script() -- SkinsButton.Script 
+	local script = Instance.new('Script', SkinsButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,0)
+			local LocalPlayer = game:GetService("Players").LocalPlayer
+	local Client = getsenv(game.Players.LocalPlayer.PlayerGui.Client)
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+	local allSkins = {
+	   {'AK47_Ace'},
+	   {'AK47_Bloodboom'},
+	   {'AK47_Clown'},
+	   {'AK47_Code Orange'},
+	   {'AK47_Eve'},
+	   {'AK47_Gifted'},
+	   {'AK47_Glo'},
+	   {'AK47_Godess'},
+	   {'AK47_Hallows'},
+	   {'AK47_Halo'},
+	   {'AK47_Hypersonic'},
+	   {'AK47_Inversion'},
+	   {'AK47_Jester'},
+	   {'AK47_Maker'},
+	   {'AK47_Mean Green'},
+	   {'AK47_Outlaws'},
+	   {'AK47_Outrunner'},
+	   {'AK47_Patch'},
+	   {'AK47_Plated'},
+	   {'AK47_Precision'},
+	   {'AK47_Quantum'},
+	   {'AK47_Quicktime'},
+	   {'AK47_Scapter'},
+	   {'AK47_Secret Santa'},
+	   {'AK47_Shooting Star'},
+	   {'AK47_Skin Committee'},
+	   {'AK47_Survivor'},
+	   {'AK47_Ugly Sweater'},
+	   {'AK47_VAV'},
+	   {'AK47_Variant Camo'},
+	   {'AK47_Yltude'},
+	   {'AUG_Chilly Night'},
+	   {'AUG_Dream Hound'},
+	   {'AUG_Enlisted'},
+	   {'AUG_Graffiti'},
+	   {'AUG_Homestead'},
+	   {'AUG_Maker'},
+	   {'AUG_NightHawk'},
+	   {'AUG_Phoenix'},
+	   {'AUG_Sunsthetic'},
+	   {'AWP_Abaddon'},
+	   {'AWP_Autumness'},
+	   {'AWP_Blastech'},
+	   {'AWP_Bloodborne'},
+	   {'AWP_Coffin Biter'},
+	   {'AWP_Desert Camo'},
+	   {'AWP_Difference'},
+	   {'AWP_Dragon'},
+	   {'AWP_Forever'},
+	   {'AWP_Grepkin'},
+	   {'AWP_Hika'},
+	   {'AWP_Illusion'},
+	   {'AWP_Instinct'},
+	   {'AWP_JTF2'},
+	   {'AWP_Lunar'},
+	   {'AWP_Nerf'},
+	   {'AWP_Northern Lights'},
+	   {'AWP_Pear Tree'},
+	   {'AWP_Pink Vision'},
+	   {'AWP_Pinkie'},
+	   {'AWP_Quicktime'},
+	   {'AWP_Racer'},
+	   {'AWP_Regina'},
+	   {'AWP_Retroactive'},
+	   {'AWP_Scapter'},
+	   {'AWP_Silence'},
+	   {'AWP_Venomus'},
+	   {'AWP_Weeb'},
+	   {'Banana_Stock'},
+	   {'Bayonet_Aequalis'},
+	   {'Bayonet_Banner'},
+	   {'Bayonet_Candy Cane'},
+	   {'Bayonet_Consumed'},
+	   {'Bayonet_Cosmos'},
+	   {'Bayonet_Crimson Tiger'},
+	   {'Bayonet_Crow'},
+	   {'Bayonet_Delinquent'},
+	   {'Bayonet_Digital'},
+	   {'Bayonet_Easy-Bake'},
+	   {'Bayonet_Egg Shell'},
+	   {'Bayonet_Festive'},
+	   {'Bayonet_Frozen Dream'},
+	   {'Bayonet_Geo Blade'},
+	   {'Bayonet_Ghastly'},
+	   {'Bayonet_Goo'},
+	   {'Bayonet_Hallows'},
+	   {'Bayonet_Intertwine'},
+	   {'Bayonet_Marbleized'},
+	   {'Bayonet_Mariposa'},
+	   {'Bayonet_Naval'},
+	   {'Bayonet_Neonic'},
+	   {'Bayonet_RSL'},
+	   {'Bayonet_Racer'},
+	   {'Bayonet_Sapphire'},
+	   {'Bayonet_Silent Night'},
+	   {'Bayonet_Splattered'},
+	   {'Bayonet_Stock'},
+	   {'Bayonet_Topaz'},
+	   {'Bayonet_Tropical'},
+	   {'Bayonet_Twitch'},
+	   {'Bayonet_UFO'},
+	   {'Bayonet_Wetland'},
+	   {'Bayonet_Worn'},
+	   {'Bayonet_Wrapped'},
+	   {'Bearded Axe_Beast'},
+	   {'Bearded Axe_Splattered'},
+	   {'Bizon_Autumic'},
+	   {'Bizon_Festive'},
+	   {'Bizon_Oblivion'},
+	   {'Bizon_Saint Nick'},
+	   {'Bizon_Sergeant'},
+	   {'Bizon_Shattered'},
+	   {'Butterfly Knife_Aurora'},
+	   {'Butterfly Knife_Bloodwidow'},
+	   {'Butterfly Knife_Consumed'},
+	   {'Butterfly Knife_Cosmos'},
+	   {'Butterfly Knife_Crimson Tiger'},
+	   {'Butterfly Knife_Crippled Fade'},
+	   {'Butterfly Knife_Digital'},
+	   {'Butterfly Knife_Egg Shell'},
+	   {'Butterfly Knife_Freedom'},
+	   {'Butterfly Knife_Frozen Dream'},
+	   {'Butterfly Knife_Goo'},
+	   {'Butterfly Knife_Hallows'},
+	   {'Butterfly Knife_Icicle'},
+	   {'Butterfly Knife_Inversion'},
+	   {'Butterfly Knife_Jade Dream'},
+	   {'Butterfly Knife_Marbleized'},
+	   {'Butterfly Knife_Naval'},
+	   {'Butterfly Knife_Neonic'},
+	   {'Butterfly Knife_Reaper'},
+	   {'Butterfly Knife_Ruby'},
+	   {'Butterfly Knife_Scapter'},
+	   {'Butterfly Knife_Splattered'},
+	   {'Butterfly Knife_Stock'},
+	   {'Butterfly Knife_Topaz'},
+	   {'Butterfly Knife_Tropical'},
+	   {'Butterfly Knife_Twitch'},
+	   {'Butterfly Knife_Wetland'},
+	   {'Butterfly Knife_White Boss'},
+	   {'Butterfly Knife_Worn'},
+	   {'Butterfly Knife_Wrapped'},
+	   {'CZ_Designed'},
+	   {'CZ_Festive'},
+	   {'CZ_Holidays'},
+	   {'CZ_Lightning'},
+	   {'CZ_Orange Web'},
+	   {'CZ_Spectre'},
+	   {'Cleaver_Spider'},
+	   {'Cleaver_Splattered'},
+	   {'DesertEagle_Cold Truth'},
+	   {'DesertEagle_Cool Blue'},
+	   {'DesertEagle_DropX'},
+	   {'DesertEagle_Glittery'},
+	   {'DesertEagle_Grim'},
+	   {'DesertEagle_Heat'},
+	   {'DesertEagle_Honor-bound'},
+	   {'DesertEagle_Independence'},
+	   {'DesertEagle_Krystallos'},
+	   {'DesertEagle_Pumpkin Buster'},
+	   {'DesertEagle_ROLVe'},
+	   {'DesertEagle_Racer'},
+	   {'DesertEagle_Scapter'},
+	   {'DesertEagle_Skin Committee'},
+	   {'DesertEagle_Survivor'},
+	   {'DesertEagle_Weeb'},
+	   {'DesertEagle_Xmas'},
+	   {'DualBerettas_Carbonized'},
+	   {'DualBerettas_Dusty Manor'},
+	   {'DualBerettas_Floral'},
+	   {'DualBerettas_Hexline'},
+	   {'DualBerettas_Neon web'},
+	   {'DualBerettas_Old Fashioned'},
+	   {'DualBerettas_Xmas'},
+	   {'Falchion Knife_Bloodwidow'},
+	   {'Falchion Knife_Chosen'},
+	   {'Falchion Knife_Coal'},
+	   {'Falchion Knife_Consumed'},
+	   {'Falchion Knife_Cosmos'},
+	   {'Falchion Knife_Crimson Tiger'},
+	   {'Falchion Knife_Crippled Fade'},
+	   {'Falchion Knife_Digital'},
+	   {'Falchion Knife_Egg Shell'},
+	   {'Falchion Knife_Festive'},
+	   {'Falchion Knife_Freedom'},
+	   {'Falchion Knife_Frozen Dream'},
+	   {'Falchion Knife_Goo'},
+	   {'Falchion Knife_Hallows'},
+	   {'Falchion Knife_Inversion'},
+	   {'Falchion Knife_Late Night'},
+	   {'Falchion Knife_Marbleized'},
+	   {'Falchion Knife_Naval'},
+	   {'Falchion Knife_Neonic'},
+	   {'Falchion Knife_Racer'},
+	   {'Falchion Knife_Ruby'},
+	   {'Falchion Knife_Splattered'},
+	   {'Falchion Knife_Stock'},
+	   {'Falchion Knife_Topaz'},
+	   {'Falchion Knife_Tropical'},
+	   {'Falchion Knife_Wetland'},
+	   {'Falchion Knife_Worn'},
+	   {'Falchion Knife_Wrapped'},
+	   {'Falchion Knife_Zombie'},
+	   {'Famas_Abstract'},
+	   {'Famas_Centipede'},
+	   {'Famas_Cogged'},
+	   {'Famas_Goliath'},
+	   {'Famas_Haunted Forest'},
+	   {'Famas_KugaX'},
+	   {'Famas_MK11'},
+	   {'Famas_Medic'},
+	   {'Famas_Redux'},
+	   {'Famas_Shocker'},
+	   {'Famas_Toxic Rain'},
+	   {'FiveSeven_Autumn Fade'},
+	   {'FiveSeven_Danjo'},
+	   {'FiveSeven_Fluid'},
+	   {'FiveSeven_Gifted'},
+	   {'FiveSeven_Midnight Ride'},
+	   {'FiveSeven_Mr. Anatomy'},
+	   {'FiveSeven_Stigma'},
+	   {'FiveSeven_Sub Zero'},
+	   {'FiveSeven_Summer'},
+	   {'Flip Knife_Stock'},
+	   {'G3SG1_Amethyst'},
+	   {'G3SG1_Autumn'},
+	   {'G3SG1_Foliage'},
+	   {'G3SG1_Hex'},
+	   {'G3SG1_Holly Bound'},
+	   {'G3SG1_Mahogany'},
+	   {'Galil_Frosted'},
+	   {'Galil_Hardware 2'},
+	   {'Galil_Hardware'},
+	   {'Galil_Toxicity'},
+	   {'Galil_Worn'},
+	   {'Glock_Angler'},
+	   {'Glock_Anubis'},
+	   {'Glock_Biotrip'},
+	   {'Glock_Day Dreamer'},
+	   {'Glock_Desert Camo'},
+	   {'Glock_Gravestomper'},
+	   {'Glock_Midnight Tiger'},
+	   {'Glock_Money Maker'},
+	   {'Glock_RSL'},
+	   {'Glock_Rush'},
+	   {'Glock_Scapter'},
+	   {'Glock_Spacedust'},
+	   {'Glock_Tarnish'},
+	   {'Glock_Underwater'},
+	   {'Glock_Wetland'},
+	   {'Glock_White Sauce'},
+	   {'Gut Knife_Banner'},
+	   {'Gut Knife_Bloodwidow'},
+	   {'Gut Knife_Consumed'},
+	   {'Gut Knife_Cosmos'},
+	   {'Gut Knife_Crimson Tiger'},
+	   {'Gut Knife_Crippled Fade'},
+	   {'Gut Knife_Digital'},
+	   {'Gut Knife_Egg Shell'},
+	   {'Gut Knife_Frozen Dream'},
+	   {'Gut Knife_Geo Blade'},
+	   {'Gut Knife_Goo'},
+	   {'Gut Knife_Hallows'},
+	   {'Gut Knife_Lurker'},
+	   {'Gut Knife_Marbleized'},
+	   {'Gut Knife_Naval'},
+	   {'Gut Knife_Neonic'},
+	   {'Gut Knife_Present'},
+	   {'Gut Knife_Ruby'},
+	   {'Gut Knife_Rusty'},
+	   {'Gut Knife_Splattered'},
+	   {'Gut Knife_Topaz'},
+	   {'Gut Knife_Tropical'},
+	   {'Gut Knife_Wetland'},
+	   {'Gut Knife_Worn'},
+	   {'Gut Knife_Wrapped'},
+	   {'Huntsman Knife_Aurora'},
+	   {'Huntsman Knife_Bloodwidow'},
+	   {'Huntsman Knife_Consumed'},
+	   {'Huntsman Knife_Cosmos'},
+	   {'Huntsman Knife_Cozy'},
+	   {'Huntsman Knife_Crimson Tiger'},
+	   {'Huntsman Knife_Crippled Fade'},
+	   {'Huntsman Knife_Digital'},
+	   {'Huntsman Knife_Egg Shell'},
+	   {'Huntsman Knife_Frozen Dream'},
+	   {'Huntsman Knife_Geo Blade'},
+	   {'Huntsman Knife_Goo'},
+	   {'Huntsman Knife_Hallows'},
+	   {'Huntsman Knife_Honor Fade'},
+	   {'Huntsman Knife_Marbleized'},
+	   {'Huntsman Knife_Monster'},
+	   {'Huntsman Knife_Naval'},
+	   {'Huntsman Knife_Ruby'},
+	   {'Huntsman Knife_Splattered'},
+	   {'Huntsman Knife_Stock'},
+	   {'Huntsman Knife_Tropical'},
+	   {'Huntsman Knife_Twitch'},
+	   {'Huntsman Knife_Wetland'},
+	   {'Huntsman Knife_Worn'},
+	   {'Huntsman Knife_Wrapped'},
+	   {'Karambit_Bloodwidow'},
+	   {'Karambit_Consumed'},
+	   {'Karambit_Cosmos'},
+	   {'Karambit_Crimson Tiger'},
+	   {'Karambit_Crippled Fade'},
+	   {'Karambit_Death Wish'},
+	   {'Karambit_Digital'},
+	   {'Karambit_Egg Shell'},
+	   {'Karambit_Festive'},
+	   {'Karambit_Frozen Dream'},
+	   {'Karambit_Glossed'},
+	   {'Karambit_Gold'},
+	   {'Karambit_Goo'},
+	   {'Karambit_Hallows'},
+	   {'Karambit_Jade Dream'},
+	   {'Karambit_Jester'},
+	   {'Karambit_Lantern'},
+	   {'Karambit_Liberty Camo'},
+	   {'Karambit_Marbleized'},
+	   {'Karambit_Naval'},
+	   {'Karambit_Neonic'},
+	   {'Karambit_Pizza'},
+	   {'Karambit_Quicktime'},
+	   {'Karambit_Racer'},
+	   {'Karambit_Ruby'},
+	   {'Karambit_Scapter'},
+	   {'Karambit_Splattered'},
+	   {'Karambit_Stock'},
+	   {'Karambit_Topaz'},
+	   {'Karambit_Tropical'},
+	   {'Karambit_Twitch'},
+	   {'Karambit_Wetland'},
+	   {'Karambit_Worn'},
+	   {'M249_Aggressor'},
+	   {'M249_P2020'},
+	   {'M249_Spooky'},
+	   {'M249_Wolf'},
+	   {'M4A1_Animatic'},
+	   {'M4A1_Burning'},
+	   {'M4A1_Desert Camo'},
+	   {'M4A1_Heavens Gate'},
+	   {'M4A1_Impulse'},
+	   {'M4A1_Jester'},
+	   {'M4A1_Lunar'},
+	   {'M4A1_Necropolis'},
+	   {'M4A1_Tecnician'},
+	   {'M4A1_Toucan'},
+	   {'M4A1_Wastelander'},
+	   {'M4A4_BOT[S]'},
+	   {'M4A4_Candyskull'},
+	   {'M4A4_Delinquent'},
+	   {'M4A4_Desert Camo'},
+	   {'M4A4_Devil'},
+	   {'M4A4_Endline'},
+	   {'M4A4_Flashy Ride'},
+	   {'M4A4_Ice Cap'},
+	   {'M4A4_Jester'},
+	   {'M4A4_King'},
+	   {'M4A4_Mistletoe'},
+	   {'M4A4_Pinkie'},
+	   {'M4A4_Pinkvision'},
+	   {'M4A4_Pondside'},
+	   {'M4A4_Precision'},
+	   {'M4A4_Quicktime'},
+	   {'M4A4_Racer'},
+	   {'M4A4_RayTrack'},
+	   {'M4A4_Scapter'},
+	   {'M4A4_Stardust'},
+	   {'M4A4_Toy Soldier'},
+	   {'MAC10_Artists Intent'},
+	   {'MAC10_Blaze'},
+	   {'MAC10_Golden Rings'},
+	   {'MAC10_Pimpin'},
+	   {'MAC10_Skeleboney'},
+	   {'MAC10_Toxic'},
+	   {'MAC10_Turbo'},
+	   {'MAC10_Wetland'},
+	   {'MAG7_Bombshell'},
+	   {'MAG7_C4UTION'},
+	   {'MAG7_Frosty'},
+	   {'MAG7_Molten'},
+	   {'MAG7_Outbreak'},
+	   {'MAG7_Striped'},
+	   {'MP7_Calaxian'},
+	   {'MP7_Cogged'},
+	   {'MP7_Goo'},
+	   {'MP7_Holiday'},
+	   {'MP7_Industrial'},
+	   {'MP7_Reindeer'},
+	   {'MP7_Silent Ops'},
+	   {'MP7_Sunshot'},
+	   {'MP9_Blueroyal'},
+	   {'MP9_Cob Web'},
+	   {'MP9_Cookie Man'},
+	   {'MP9_Decked Halls'},
+	   {'MP9_SnowTime'},
+	   {'MP9_Vaporwave'},
+	   {'MP9_Velvita'},
+	   {'MP9_Wilderness'},
+	   {'Negev_Default'},
+	   {'Negev_Midnightbones'},
+	   {'Negev_Quazar'},
+	   {'Negev_Striped'},
+	   {'Negev_Wetland'},
+	   {'Negev_Winterfell'},
+	   {'Nova_Black Ice'},
+	   {'Nova_Cookie'},
+	   {'Nova_Paradise'},
+	   {'Nova_Sharkesh'},
+	   {'Nova_Starry Night'},
+	   {'Nova_Terraformer'},
+	   {'Nova_Tiger'},
+	   {'P2000_Apathy'},
+	   {'P2000_Camo Dipped'},
+	   {'P2000_Candycorn'},
+	   {'P2000_Comet'},
+	   {'P2000_Dark Beast'},
+	   {'P2000_Golden Age'},
+	   {'P2000_Lunar'},
+	   {'P2000_Pinkie'},
+	   {'P2000_Ruby'},
+	   {'P2000_Silence'},
+	   {'P250_Amber'},
+	   {'P250_Bomber'},
+	   {'P250_Equinox'},
+	   {'P250_Frosted'},
+	   {'P250_Goldish'},
+	   {'P250_Green Web'},
+	   {'P250_Shark'},
+	   {'P250_Solstice'},
+	   {'P250_TC250'},
+	   {'P90_Demon Within'},
+	   {'P90_Elegant'},
+	   {'P90_Krampus'},
+	   {'P90_Northern Lights'},
+	   {'P90_P-Chan'},
+	   {'P90_Pine'},
+	   {'P90_Redcopy'},
+	   {'P90_Skulls'},
+	   {'R8_Exquisite'},
+	   {'R8_Hunter'},
+	   {'R8_Spades'},
+	   {'R8_TG'},
+	   {'R8_Violet'},
+	   {'SG_DropX'},
+	   {'SG_Dummy'},
+	   {'SG_Kitty Cat'},
+	   {'SG_Knighthood'},
+	   {'SG_Magma'},
+	   {'SG_Variant Camo'},
+	   {'SG_Yltude'},
+	   {'SawedOff_Casino'},
+	   {'SawedOff_Colorboom'},
+	   {'SawedOff_Executioner'},
+	   {'SawedOff_Opal'},
+	   {'SawedOff_Spooky'},
+	   {'SawedOff_Sullys Blacklight'},
+	   {'Scout_Coffin Biter'},
+	   {'Scout_Flowing Mists'},
+	   {'Scout_Hellborn'},
+	   {'Scout_Hot Cocoa'},
+	   {'Scout_Monstruo'},
+	   {'Scout_Neon Regulation'},
+	   {'Scout_Posh'},
+	   {'Scout_Pulse'},
+	   {'Scout_Railgun'},
+	   {'Scout_Theory'},
+	   {'Scout_Xmas'},
+	   {'Sickle_Mummy'},
+	   {'Sickle_Splattered'},
+	   {'Tec9_Charger'},
+	   {'Tec9_Gift Wrapped'},
+	   {'Tec9_Ironline'},
+	   {'Tec9_Performer'},
+	   {'Tec9_Phol'},
+	   {'Tec9_Samurai'},
+	   {'Tec9_Skintech'},
+	   {'Tec9_Stocking Stuffer'},
+	   {'UMP_Death Grip'},
+	   {'UMP_Gum Drop'},
+	   {'UMP_Magma'},
+	   {'UMP_Militia Camo'},
+	   {'UMP_Molten'},
+	   {'UMP_Redline'},
+	   {'USP_Crimson'},
+	   {'USP_Dizzy'},
+	   {'USP_Frostbite'},
+	   {'USP_Holiday'},
+	   {'USP_Jade Dream'},
+	   {'USP_Kraken'},
+	   {'USP_Nighttown'},
+	   {'USP_Paradise'},
+	   {'USP_Racing'},
+	   {'USP_Skull'},
+	   {'USP_Unseen'},
+	   {'USP_Worlds Away'},
+	   {'USP_Yellowbelly'},
+	   {'XM_Artic'},
+	   {'XM_Atomic'},
+	   {'XM_Campfire'},
+	   {'XM_Endless Night'},
+	   {'XM_MK11'},
+	   {'XM_Predator'},
+	   {'XM_Red'},
+	   {'XM_Spectrum'},
+	   {'Handwraps_Wraps'},
+	   {'Sports Glove_Hazard'},
+	   {'Sports Glove_Hallows'},
+	   {'Sports Glove_Majesty'},
+	   {'Strapped Glove_Racer'},
+	   {'trapped Glove_Grim'},
+	   {'trapped Glove_Wisk'},
+	   {'Fingerless Glove_Scapter'},
+	   {'Fingerless Glove_Digital'},
+	   {'Fingerless Glove_Patch'},
+	   {'Handwraps_Guts'},
+	   {'Handwraps_Wetland'},
+	   {'trapped Glove_Molten'},
+	   {'Fingerless_Crystal'},
+	   {'Sports Glove_Royal'},
+	   {'Strapped Glove_Kringle'},
+	   {'Handwraps_MMA'},
+	   {'Sports Glove_Weeb'},
+	   {'Sports Glove_CottonTail'},
+	   {'Sports Glove_RSL'},
+	   {'Handwraps_Ghoul Hex'},
+	   {'Handwraps_Phantom Hex'},
+	   {'Handwraps_Spector Hex'},
+	   {'Handwraps_Orange Hex'},
+	   {'Handwraps_Purple Hex'},
+	   {'Handwraps_Green Hex'},
+	}
+	
+	local isUnlocked
+	
+	local mt = getrawmetatable(game)
+	local oldNamecall = mt.__namecall
+	setreadonly(mt, false)
+	
+	local isUnlocked
+	
+	mt.__namecall = newcclosure(function(self, ...)
+	   local args = {...}
+	   if getnamecallmethod() == "InvokeServer" and tostring(self) == "Hugh" then
+	       return
+	   end
+	   if getnamecallmethod() == "FireServer" then
+	       if args[1] == LocalPlayer.UserId then
+	           return
+	       end
+	       if string.len(tostring(self)) == 38 then
+	           if not isUnlocked then
+	               isUnlocked = true
+	               for i,v in pairs(allSkins) do
+	                   local doSkip
+	                   for i2,v2 in pairs(args[1]) do
+	                       if v[1] == v2[1] then
+	                           doSkip = true
+	                       end
+	                   end
+	                   if not doSkip then
+	                       table.insert(args[1], v)
+	                   end
+	               end
+	           end
+	           return
+	       end
+	       if tostring(self) == "DataEvent" and args[1][4] then
+	           local currentSkin = string.split(args[1][4][1], "_")[2]
+	           if args[1][2] == "Both" then
+	               LocalPlayer["SkinFolder"]["CTFolder"][args[1][3]].Value = currentSkin
+	               LocalPlayer["SkinFolder"]["TFolder"][args[1][3]].Value = currentSkin
+	           else
+	               LocalPlayer["SkinFolder"][args[1][2] .. "Folder"][args[1][3]].Value = currentSkin
+	           end
+	       end
+	   end
+	   return oldNamecall(self, ...)
+	end)
+	   
+	setreadonly(mt, true)
+	
+	Client.CurrentInventory = allSkins
+	
+	local TClone, CTClone = LocalPlayer.SkinFolder.TFolder:Clone(), game.Players.LocalPlayer.SkinFolder.CTFolder:Clone()
+	LocalPlayer.SkinFolder.TFolder:Destroy()
+	LocalPlayer.SkinFolder.CTFolder:Destroy()
+	TClone.Parent = LocalPlayer.SkinFolder
+	CTClone.Parent = LocalPlayer.SkinFolder
+	end)
+end
+coroutine.wrap(HXLY_fake_script)()
+local function ZIMNUCN_fake_script() -- Frame.LocalGuiScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	
+	
+	
+	--Setup the locals
+	local StarterGui = game:GetService("StarterGui")
+	local gui = script.Parent
+	local NameOfPlayer = gui:WaitForChild("PLS")
+	local PlayerList = NameOfPlayer:WaitForChild("PlayerList")
+	local ScrollingFrame = PlayerList:WaitForChild("ScrollingFrame")
+	local PlayerService = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	--Starting game
+	StarterGui:SetCoreGuiEnabled("PlayerList", false)
+	NameOfPlayer.Text = "Players"
+	
+	--Label the players / Updating label
+	RunService.RenderStepped:connect(function()
+		local playerlabel = ScrollingFrame:GetChildren()
+		local players = PlayerService:GetPlayers()
+		for i,v in next, playerlabel do
+			if players[tonumber(v.Name:sub(7))] then
+				v.Text = players[tonumber(v.Name:sub(7))].Name
+				v.Visible = true
+			else
+				v.Text  = ""
+				v.Visible = false
+			end
+		end
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player1.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player1.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player2.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player2.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player3.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player3.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player4.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player4.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player5.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player5.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player6.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player6.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player7.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player7.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player8.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player8.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player9.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player9.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player10.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player10.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player11.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player11.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player12.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player12.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player13.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player13.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	script.Parent.PLS.PlayerList.ScrollingFrame.Player14.MouseButton1Click:Connect(function()
+	local Name = script.Parent.PLS.PlayerList.ScrollingFrame.Player14.Text
+		script.Parent.WeaponFrame.Frame.PlayerName.Text = Name
+	end)
+	
+	
+end
+coroutine.wrap(ZIMNUCN_fake_script)()
+local function ADIXIYG_fake_script() -- NewUi2.Script 
+	local script = Instance.new('Script', NewUi2)
+
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	local key = false
+	local UIS = game:GetService("UserInputService")
+	local Cursor = script.Parent.Cursor
+	UIS.InputBegan:Connect(function(Input)
+	    if Input.KeyCode == Enum.KeyCode.LeftAlt then
+	     if key == true then key = false else key = true 
+		end
+		if key == true then do
+					script.Parent.Frame.Visible = true
+					game:GetService("UserInputService").MouseBehavior = Enum.MouseBehavior.Default
+					Cursor.Visible = true
+					game.Players.LocalPlayer.CameraMaxZoomDistance = 10
+				end
+		end
+		
+		if key == false then
+				      script.Parent.Frame.Visible = false
+				game:GetService("UserInputService").MouseBehavior = Enum.MouseBehavior.LockCenter
+				Cursor.Visible = false
+				game.Players.LocalPlayer.CameraMaxZoomDistance = 0
+			end
+	    end
+	end)
+	while true do
+		Cursor.Position = UDim2.new(0, mouse.X, 0, mouse.Y)
+		wait()
+	end
+	
+	
+	
+	
+end
+coroutine.wrap(ADIXIYG_fake_script)()
+local function RVQH_fake_script() -- NewUi2.Kill 
+	local script = Instance.new('Script', NewUi2)
+
+	local UIS = game:GetService("UserInputService")
+	UIS.InputBegan:Connect(function(Input)
+	    if Input.KeyCode == Enum.KeyCode.RightControl then
+	    local Remote = game.ReplicatedStorage.Events['HitPart']
+	for _,v in pairs(game:GetService"Players":GetChildren()) do
+	if v.Team ~= game.Players.LocalPlayer.Team then
+	if v.Character and v.Character.Head then
+	local Arguments = {
+	[1] = workspace[v.Name].Head,
+	[2] = workspace[v.Name].Head.Position,
+	[3] = workspace[game.Players.LocalPlayer.Name].EquippedTool.Value,
+	[4] = math.rad(1,100000),
+	[5] = workspace[game.Players.LocalPlayer.Name].Gun,
+	[8] = 8, --damage multiplier
+	[9] = false,
+	[10] = false,
+	[11] = Vector3.new(),
+	[12] = math.rad(1,100000),
+	[13] = Vector3.new()
+	}
+	 
+						Remote:FireServer(unpack(Arguments))
+					end
+					end
+	end
+	end
+	end)
+end
+coroutine.wrap(RVQH_fake_script)()
+local function NJXTI_fake_script() -- NewUi2.InfCash 
+	local script = Instance.new('Script', NewUi2)
+
+	while true do 
+	game.Players.LocalPlayer.Cash.Value = 5500
+	wait(2)
+	end
+	
+end
+coroutine.wrap(NJXTI_fake_script)()
