@@ -1,0 +1,415 @@
+local cdb=Instance.new("ScreenGui")
+local ddb=Instance.new("Frame")local __c=Instance.new("Frame")
+local a_c=Instance.new("UIListLayout")local b_c=Instance.new("ImageButton")
+local c_c=Instance.new("ImageButton")local d_c=Instance.new("ImageButton")
+local _ac=Instance.new("ImageButton")local aac=Instance.new("ImageButton")
+local bac=Instance.new("Frame")local cac=Instance.new("Frame")
+local dac=Instance.new("Frame")local _bc=Instance.new("Frame")
+local abc=Instance.new("UIListLayout")local bbc=Instance.new("Frame")
+local cbc=Instance.new("Frame")local dbc=Instance.new("Frame")
+local _cc=Instance.new("UIListLayout")local acc=Instance.new("Frame")
+local bcc=Instance.new("TextLabel")local ccc=Instance.new("TextButton")
+local dcc=Instance.new("UIListLayout")local _dc=Instance.new("Frame")
+local adc=Instance.new("Frame")local bdc=Instance.new("Frame")
+local cdc=Instance.new("Frame")local ddc=Instance.new("Frame")
+local __d=Instance.new("Frame")local a_d=Instance.new("Frame")
+local b_d=Instance.new("Frame")local c_d=Instance.new("Frame")
+local d_d=Instance.new("Frame")local _ad=Instance.new("TextButton")
+local aad=Instance.new("TextBox")local bad=Instance.new("TextLabel")
+local cad=Instance.new("Frame")local dad=Instance.new("Frame")
+local _bd=Instance.new("Frame")local abd=Instance.new("TextLabel")
+local bbd=Instance.new("Frame")local cbd=Instance.new("UIListLayout")
+local dbd=Instance.new("Frame")local _cd=Instance.new("UIListLayout")
+local acd=Instance.new("TextLabel")local bcd=Instance.new("ImageLabel")
+local ccd=Instance.new("ScrollingFrame")local dcd=Instance.new("TextButton")
+local _dd=Instance.new("TextButton")local add=Instance.new("TextButton")
+local bdd=Instance.new("TextButton")local cdd=Instance.new("TextButton")
+local ddd=Instance.new("TextButton")local ___a=Instance.new("TextButton")
+local a__a=Instance.new("TextButton")local b__a=Instance.new("TextButton")
+local c__a=Instance.new("TextButton")local d__a=Instance.new("TextButton")
+local _a_a=Instance.new("TextButton")local aa_a=Instance.new("TextButton")
+local ba_a=Instance.new("TextButton")local ca_a=Instance.new("TextLabel")
+local da_a=Instance.new("Frame")cdb.Name="Arsenal"cdb.Parent=game.CoreGui;ddb.Active=true
+ddb.Draggable=true;ddb.Parent=cdb;ddb.BackgroundColor3=Color3.fromRGB(65,65,65)
+ddb.BorderSizePixel=0;ddb.Position=UDim2.new(0.0692307726,0,0.128060266,0)
+ddb.Size=UDim2.new(0,497,0,450)__c.Name="TapList"__c.Parent=ddb
+__c.BackgroundColor3=Color3.fromRGB(50,50,50)__c.BorderColor3=Color3.fromRGB(0,0,0)__c.BorderSizePixel=0;__c.Position=UDim2.new(
+-0.00192306796,0,0.010960456,0)
+__c.Size=UDim2.new(0,50,0,444)a_c.Parent=__c
+a_c.HorizontalAlignment=Enum.HorizontalAlignment.Center;a_c.Padding=UDim.new(0,50)b_c.Name="VisualsTab"b_c.Parent=__c
+b_c.BackgroundColor3=Color3.fromRGB(0,0,0)b_c.BackgroundTransparency=1.000
+b_c.BorderColor3=Color3.fromRGB(0,0,0)b_c.BorderSizePixel=0
+b_c.Position=UDim2.new(0.140000001,0,0.209339336,0)b_c.Size=UDim2.new(0,49,0,49)
+b_c.Image="http://www.roblox.com/asset/?id=5402923383"b_c.ImageColor3=Color3.fromRGB(50,50,50)
+c_c.Name="SettingsTab"c_c.Parent=__c;c_c.BackgroundColor3=Color3.fromRGB(50,50,50)
+c_c.BorderColor3=Color3.fromRGB(0,0,0)c_c.BorderSizePixel=0
+c_c.Position=UDim2.new(0.140000001,0,0.209339336,0)c_c.Size=UDim2.new(0,49,0,49)c_c.AutoButtonColor=false
+c_c.Image="http://www.roblox.com/asset/?id=5403133442"c_c.ImageColor3=Color3.fromRGB(50,50,50)
+d_c.Name="MovementTab"d_c.Parent=__c;d_c.BackgroundColor3=Color3.fromRGB(50,50,50)
+d_c.BorderSizePixel=0;d_c.Position=UDim2.new(0.0492307656,0,0.521300972,0)
+d_c.Size=UDim2.new(0,49,0,49)d_c.ZIndex=2;d_c.Image="rbxassetid://3926305904"
+d_c.ImageColor3=Color3.fromRGB(0,0,0)d_c.ImageRectOffset=Vector2.new(924,684)
+d_c.ImageRectSize=Vector2.new(36,36)_ac.Name="AimbotTab"_ac.Parent=__c
+_ac.BackgroundColor3=Color3.fromRGB(0,0,0)_ac.BackgroundTransparency=1.000
+_ac.BorderColor3=Color3.fromRGB(0,0,0)_ac.BorderSizePixel=0
+_ac.Position=UDim2.new(0.120000005,0,0.529159129,0)_ac.Size=UDim2.new(0,49,0,49)
+_ac.Image="http://www.roblox.com/asset/?id=1063347537"_ac.ImageColor3=Color3.fromRGB(50,50,50)
+aac.Name="WeaponsTab"aac.Parent=__c;aac.BackgroundColor3=Color3.fromRGB(50,50,50)
+aac.BackgroundTransparency=0.500;aac.BorderColor3=Color3.fromRGB(0,0,0)aac.BorderSizePixel=0
+aac.Position=UDim2.new(0.140000001,0,0.209339336,0)aac.Size=UDim2.new(0,49,0,49)
+aac.Image="http://www.roblox.com/asset/?id=5403088113"aac.ImageColor3=Color3.fromRGB(50,50,50)bac.Name="TopBar"
+bac.Parent=ddb;bac.BackgroundColor3=Color3.fromRGB(40,40,40)
+bac.BorderSizePixel=0
+bac.Position=UDim2.new(-0.00192303723,0,-0.000150655105,0)bac.Size=UDim2.new(0,497,0,5)cac.Name="MovementFrame"
+cac.Parent=ddb;cac.BackgroundColor3=Color3.fromRGB(255,255,255)
+cac.BackgroundTransparency=1.000;cac.BorderSizePixel=0
+cac.Position=UDim2.new(0.0985915512,0,0.0088888891,0)cac.Size=UDim2.new(0,447,0,444)cac.Visible=false
+dac.Parent=cac;dac.BackgroundColor3=Color3.fromRGB(80,80,80)
+dac.BorderColor3=Color3.fromRGB(40,40,40)dac.Position=UDim2.new(0.586043239,0,0.027322745,0)
+dac.Size=UDim2.new(0,173,0,173)_bc.Parent=cac;_bc.BackgroundColor3=Color3.fromRGB(80,80,80)
+_bc.BorderColor3=Color3.fromRGB(40,40,40)_bc.Position=UDim2.new(0.0138989948,0,0.0295750014,0)
+_bc.Size=UDim2.new(0,221,0,419)abc.Parent=_bc;abc.SortOrder=Enum.SortOrder.LayoutOrder
+bbc.Parent=cac;bbc.BackgroundColor3=Color3.fromRGB(80,80,80)
+bbc.BorderColor3=Color3.fromRGB(40,40,40)bbc.Position=UDim2.new(0.586043239,0,0.583118558,0)
+bbc.Size=UDim2.new(0,173,0,173)cbc.Name="AimbotFrame"cbc.Parent=ddb
+cbc.BackgroundColor3=Color3.fromRGB(255,255,255)cbc.BackgroundTransparency=1.000;cbc.BorderSizePixel=0
+cbc.Position=UDim2.new(0.0985915512,0,0.0088888891,0)cbc.Size=UDim2.new(0,447,0,444)dbc.Parent=cbc
+dbc.BackgroundColor3=Color3.fromRGB(80,80,80)dbc.BorderColor3=Color3.fromRGB(40,40,40)
+dbc.Position=UDim2.new(0.586043239,0,0.027322745,0)dbc.Size=UDim2.new(0,173,0,173)_cc.Parent=dbc
+_cc.SortOrder=Enum.SortOrder.LayoutOrder;acc.Parent=cbc;acc.BackgroundColor3=Color3.fromRGB(80,80,80)
+acc.BorderColor3=Color3.fromRGB(40,40,40)acc.Position=UDim2.new(0.0138989948,0,0.0295750014,0)
+acc.Size=UDim2.new(0,221,0,419)bcc.Name="LegitSilentAim"bcc.Parent=acc
+bcc.BackgroundColor3=Color3.fromRGB(255,255,255)bcc.BackgroundTransparency=1.000
+bcc.Position=UDim2.new(0.0542986542,0,0.050119333,0)bcc.Size=UDim2.new(0,100,0,15)bcc.Font=Enum.Font.Arial
+bcc.Text="Legit Silent Aim"bcc.TextColor3=Color3.fromRGB(0,0,0)bcc.TextSize=14.000
+ccc.Name="LegitSilentAimButton"ccc.Parent=bcc;ccc.BackgroundColor3=Color3.fromRGB(40,40,40)
+ccc.BorderSizePixel=0;ccc.Position=UDim2.new(1.11013579,0,0.119172633,0)
+ccc.Size=UDim2.new(0,12,0,12)ccc.Font=Enum.Font.SourceSans;ccc.Text=""
+ccc.TextColor3=Color3.fromRGB(0,0,0)ccc.TextSize=14.000;dcc.Parent=acc
+dcc.SortOrder=Enum.SortOrder.LayoutOrder;_dc.Parent=cbc;_dc.BackgroundColor3=Color3.fromRGB(80,80,80)
+_dc.BorderColor3=Color3.fromRGB(40,40,40)_dc.Position=UDim2.new(0.586043239,0,0.583118558,0)
+_dc.Size=UDim2.new(0,173,0,173)adc.Name="SettingsFrame"adc.Parent=ddb
+adc.BackgroundColor3=Color3.fromRGB(255,255,255)adc.BackgroundTransparency=1.000;adc.BorderSizePixel=0
+adc.Position=UDim2.new(0.0985915512,0,0.0088888891,0)adc.Size=UDim2.new(0,447,0,444)adc.Visible=false
+bdc.Parent=adc;bdc.BackgroundColor3=Color3.fromRGB(80,80,80)
+bdc.BorderColor3=Color3.fromRGB(40,40,40)bdc.Position=UDim2.new(0.586043239,0,0.027322745,0)
+bdc.Size=UDim2.new(0,173,0,173)cdc.Parent=adc;cdc.BackgroundColor3=Color3.fromRGB(80,80,80)
+cdc.BorderColor3=Color3.fromRGB(40,40,40)cdc.Position=UDim2.new(0.0138989948,0,0.0295750014,0)
+cdc.Size=UDim2.new(0,221,0,419)ddc.Parent=adc;ddc.BackgroundColor3=Color3.fromRGB(80,80,80)
+ddc.BorderColor3=Color3.fromRGB(40,40,40)ddc.Position=UDim2.new(0.586043239,0,0.583118558,0)
+ddc.Size=UDim2.new(0,173,0,173)__d.Name="VisualsFrame"__d.Parent=ddb
+__d.BackgroundColor3=Color3.fromRGB(255,255,255)__d.BackgroundTransparency=1.000;__d.BorderSizePixel=0
+__d.Position=UDim2.new(0.0985915512,0,0.0088888891,0)__d.Size=UDim2.new(0,447,0,444)__d.Visible=false
+a_d.Parent=__d;a_d.BackgroundColor3=Color3.fromRGB(80,80,80)
+a_d.BorderColor3=Color3.fromRGB(40,40,40)a_d.Position=UDim2.new(0.586043239,0,0.027322745,0)
+a_d.Size=UDim2.new(0,173,0,173)b_d.Parent=__d;b_d.BackgroundColor3=Color3.fromRGB(80,80,80)
+b_d.BorderColor3=Color3.fromRGB(40,40,40)b_d.Position=UDim2.new(0.0138989948,0,0.0295750014,0)
+b_d.Size=UDim2.new(0,221,0,419)c_d.Parent=b_d;c_d.BackgroundColor3=Color3.fromRGB(40,40,40)
+c_d.BorderColor3=Color3.fromRGB(0,0,0)c_d.Position=UDim2.new(0.0747240111,0,0.126113996,0)
+c_d.Size=UDim2.new(0,130,0,5)d_d.Name="Bar"d_d.Parent=c_d
+d_d.BackgroundColor3=Color3.fromRGB(0,0,0)d_d.BorderSizePixel=0
+d_d.Size=UDim2.new(-0.714056373,101,1,0)_ad.Name="Detecter"_ad.Parent=c_d
+_ad.BackgroundColor3=Color3.fromRGB(255,255,255)_ad.BackgroundTransparency=1.000;_ad.Size=UDim2.new(1,0,1,0)
+_ad.Font=Enum.Font.SourceSans;_ad.Text=""_ad.TextSize=14.000;aad.Name="FovTextbox"aad.Parent=b_d
+aad.BackgroundColor3=Color3.fromRGB(40,40,40)aad.BorderSizePixel=0
+aad.Position=UDim2.new(0.316742092,0,0.050119333,0)aad.Size=UDim2.new(0,46,0,15)aad.Font=Enum.Font.Arial
+aad.Text="70"aad.TextColor3=Color3.fromRGB(255,255,255)
+aad.TextSize=14.000;bad.Name="Fov"bad.Parent=b_d
+bad.BackgroundColor3=Color3.fromRGB(255,255,255)bad.BackgroundTransparency=1.000
+bad.Position=UDim2.new(0.0769230798,0,0.050119333,0)bad.Size=UDim2.new(0,35,0,15)bad.Font=Enum.Font.Arial
+bad.Text="Fov"bad.TextColor3=Color3.fromRGB(0,0,0)bad.TextSize=14.000
+cad.Parent=__d;cad.BackgroundColor3=Color3.fromRGB(80,80,80)
+cad.BorderColor3=Color3.fromRGB(40,40,40)cad.Position=UDim2.new(0.586043239,0,0.583118558,0)
+cad.Size=UDim2.new(0,173,0,173)dad.Name="WeaponFrame"dad.Parent=ddb
+dad.BackgroundColor3=Color3.fromRGB(255,255,255)dad.BackgroundTransparency=1.000;dad.BorderSizePixel=0
+dad.Position=UDim2.new(0.0985915512,0,0.0088888891,0)dad.Size=UDim2.new(0,447,0,444)dad.Visible=false
+_bd.Parent=dad;_bd.BackgroundColor3=Color3.fromRGB(80,80,80)
+_bd.BorderColor3=Color3.fromRGB(40,40,40)_bd.Position=UDim2.new(0.586043239,0,0.027322745,0)
+_bd.Size=UDim2.new(0,173,0,173)abd.Name="PlayerName"abd.Parent=_bd
+abd.BackgroundColor3=Color3.fromRGB(255,255,255)abd.BackgroundTransparency=1.000
+abd.Position=UDim2.new(0.244553059,0,0.00193138339,0)abd.Size=UDim2.new(0,88,0,15)abd.Font=Enum.Font.Arial
+abd.Text="Player Name"abd.TextColor3=Color3.fromRGB(0,0,0)abd.TextSize=14.000
+bbd.Parent=dad;bbd.BackgroundColor3=Color3.fromRGB(80,80,80)
+bbd.BorderColor3=Color3.fromRGB(40,40,40)bbd.Position=UDim2.new(0.0138989948,0,0.0295750014,0)
+bbd.Size=UDim2.new(0,221,0,419)cbd.Parent=bbd;cbd.SortOrder=Enum.SortOrder.LayoutOrder
+dbd.Parent=dad;dbd.BackgroundColor3=Color3.fromRGB(80,80,80)
+dbd.BorderColor3=Color3.fromRGB(40,40,40)dbd.Position=UDim2.new(0.586043239,0,0.583118558,0)
+dbd.Size=UDim2.new(0,173,0,173)_cd.Parent=dbd;_cd.SortOrder=Enum.SortOrder.LayoutOrder
+acd.Name="PLS"acd.Parent=ddb
+acd.BackgroundColor3=Color3.fromRGB(255,255,255)acd.BackgroundTransparency=1.000;acd.BorderSizePixel=0;acd.Position=UDim2.new(1.02857554,0,-
+0.11219804,0)
+acd.Size=UDim2.new(0,184,0,23)acd.Font=Enum.Font.SourceSans;acd.Text="Players"
+acd.TextColor3=Color3.fromRGB(0,0,0)acd.TextSize=16.000;acd.TextTransparency=1.000;acd.TextWrapped=true
+bcd.Name="PlayerList"bcd.Parent=acd;bcd.BackgroundColor3=Color3.fromRGB(50,50,50)
+bcd.BackgroundTransparency=1.000
+bcd.Position=UDim2.new(-0.00162439758,0,2.19223142,0)bcd.Size=UDim2.new(0,184,0,448)
+bcd.Image="rbxassetid://3570695787"bcd.ImageColor3=Color3.fromRGB(50,50,50)
+bcd.ScaleType=Enum.ScaleType.Slice;bcd.SliceCenter=Rect.new(100,100,100,100)bcd.SliceScale=0.120
+ccd.Parent=bcd;ccd.Active=true
+ccd.BackgroundColor3=Color3.fromRGB(255,255,255)ccd.BackgroundTransparency=1.000;ccd.BorderSizePixel=0;ccd.Position=UDim2.new(-
+0.00199989649,0,0.0999999717,0)
+ccd.Size=UDim2.new(0,184,0,391)ccd.ScrollBarThickness=5;dcd.Name="Player1"dcd.Parent=ccd
+dcd.BackgroundColor3=Color3.fromRGB(70,70,70)dcd.BorderSizePixel=0
+dcd.Position=UDim2.new(0.00499999989,0,0,0)dcd.Size=UDim2.new(0,184,0,20)
+dcd.Font=Enum.Font.SourceSans;dcd.TextColor3=Color3.fromRGB(0,0,0)dcd.TextScaled=true
+dcd.TextSize=14.000;dcd.TextWrapped=true;_dd.Name="Player2"_dd.Parent=ccd
+_dd.BackgroundColor3=Color3.fromRGB(70,70,70)_dd.BorderSizePixel=0
+_dd.Position=UDim2.new(-0.000434782822,0,0.0462046191,0)_dd.Size=UDim2.new(0,184,0,20)
+_dd.Font=Enum.Font.SourceSans;_dd.TextColor3=Color3.fromRGB(0,0,0)_dd.TextScaled=true
+_dd.TextSize=14.000;_dd.TextWrapped=true;add.Name="Player3"add.Parent=ccd
+add.BackgroundColor3=Color3.fromRGB(70,70,70)add.BorderSizePixel=0
+add.Position=UDim2.new(-0.000434782822,0,0.0973597392,0)add.Size=UDim2.new(0,184,0,20)
+add.Font=Enum.Font.SourceSans;add.TextColor3=Color3.fromRGB(0,0,0)add.TextScaled=true
+add.TextSize=14.000;add.TextWrapped=true;bdd.Name="Player4"bdd.Parent=ccd
+bdd.BackgroundColor3=Color3.fromRGB(70,70,70)bdd.BorderSizePixel=0
+bdd.Position=UDim2.new(-0.000434782822,0,0.153465346,0)bdd.Size=UDim2.new(0,184,0,20)
+bdd.Font=Enum.Font.SourceSans;bdd.TextColor3=Color3.fromRGB(0,0,0)bdd.TextScaled=true
+bdd.TextSize=14.000;bdd.TextWrapped=true;cdd.Name="Player5"cdd.Parent=ccd
+cdd.BackgroundColor3=Color3.fromRGB(70,70,70)cdd.BorderSizePixel=0
+cdd.Position=UDim2.new(0.00499999989,0,0.20627062,0)cdd.Size=UDim2.new(0,184,0,20)
+cdd.Font=Enum.Font.SourceSans;cdd.TextColor3=Color3.fromRGB(0,0,0)cdd.TextScaled=true
+cdd.TextSize=14.000;cdd.TextWrapped=true;ddd.Name="Player6"ddd.Parent=ccd
+ddd.BackgroundColor3=Color3.fromRGB(70,70,70)ddd.BorderSizePixel=0
+ddd.Position=UDim2.new(-0.000434782822,0,0.267326713,0)ddd.Size=UDim2.new(0,184,0,20)
+ddd.Font=Enum.Font.SourceSans;ddd.TextColor3=Color3.fromRGB(0,0,0)ddd.TextScaled=true
+ddd.TextSize=14.000;ddd.TextWrapped=true;___a.Name="Player7"___a.Parent=ccd
+___a.BackgroundColor3=Color3.fromRGB(70,70,70)___a.BorderSizePixel=0
+___a.Position=UDim2.new(0.00499999989,0,0.32838285,0)___a.Size=UDim2.new(0,184,0,20)
+___a.Font=Enum.Font.SourceSans;___a.TextColor3=Color3.fromRGB(0,0,0)___a.TextScaled=true
+___a.TextSize=14.000;___a.TextWrapped=true;a__a.Name="Player8"a__a.Parent=ccd
+a__a.BackgroundColor3=Color3.fromRGB(70,70,70)a__a.BorderSizePixel=0
+a__a.Position=UDim2.new(-0.000434782822,0,0.387788773,0)a__a.Size=UDim2.new(0,184,0,20)
+a__a.Font=Enum.Font.SourceSans;a__a.TextColor3=Color3.fromRGB(0,0,0)a__a.TextScaled=true
+a__a.TextSize=14.000;a__a.TextWrapped=true;b__a.Name="Player9"b__a.Parent=ccd
+b__a.BackgroundColor3=Color3.fromRGB(70,70,70)b__a.BorderSizePixel=0
+b__a.Position=UDim2.new(-0.000434782822,0,0.442244232,0)b__a.Size=UDim2.new(0,184,0,20)
+b__a.Font=Enum.Font.SourceSans;b__a.TextColor3=Color3.fromRGB(0,0,0)b__a.TextScaled=true
+b__a.TextSize=14.000;b__a.TextWrapped=true;c__a.Name="Player10"c__a.Parent=ccd
+c__a.BackgroundColor3=Color3.fromRGB(70,70,70)c__a.BorderSizePixel=0
+c__a.Position=UDim2.new(0.00499999989,0,0.501650214,0)c__a.Size=UDim2.new(0,184,0,20)
+c__a.Font=Enum.Font.SourceSans;c__a.TextColor3=Color3.fromRGB(0,0,0)c__a.TextScaled=true
+c__a.TextSize=14.000;c__a.TextWrapped=true;d__a.Name="Player11"d__a.Parent=ccd
+d__a.BackgroundColor3=Color3.fromRGB(70,70,70)d__a.BorderSizePixel=0
+d__a.Position=UDim2.new(0.00505697355,0,0.562449515,0)d__a.Size=UDim2.new(0,184,0,20)
+d__a.Font=Enum.Font.SourceSans;d__a.TextColor3=Color3.fromRGB(0,0,0)d__a.TextScaled=true
+d__a.TextSize=14.000;d__a.TextWrapped=true;_a_a.Name="Player12"_a_a.Parent=ccd
+_a_a.BackgroundColor3=Color3.fromRGB(70,70,70)_a_a.BorderSizePixel=0
+_a_a.Position=UDim2.new(-0.00581259187,0,0.621739268,0)_a_a.Size=UDim2.new(0,184,0,20)
+_a_a.Font=Enum.Font.SourceSans;_a_a.TextColor3=Color3.fromRGB(0,0,0)_a_a.TextScaled=true
+_a_a.TextSize=14.000;_a_a.TextWrapped=true;aa_a.Name="Player13"aa_a.Parent=ccd
+aa_a.BackgroundColor3=Color3.fromRGB(70,70,70)aa_a.BorderSizePixel=0
+aa_a.Position=UDim2.new(0.000434782356,0,0.689272404,0)aa_a.Size=UDim2.new(0,184,0,20)
+aa_a.Font=Enum.Font.SourceSans;aa_a.TextColor3=Color3.fromRGB(0,0,0)aa_a.TextScaled=true
+aa_a.TextSize=14.000;aa_a.TextWrapped=true;ba_a.Name="Player14"ba_a.Parent=ccd
+ba_a.BackgroundColor3=Color3.fromRGB(70,70,70)ba_a.BorderSizePixel=0
+ba_a.Position=UDim2.new(0.00543478318,0,0.749174953,0)ba_a.Size=UDim2.new(0,184,0,20)
+ba_a.Font=Enum.Font.SourceSans;ba_a.TextColor3=Color3.fromRGB(0,0,0)ba_a.TextScaled=true
+ba_a.TextSize=14.000;ba_a.TextWrapped=true;ca_a.Parent=acd
+ca_a.BackgroundColor3=Color3.fromRGB(50,50,50)ca_a.BorderSizePixel=0
+ca_a.Position=UDim2.new(0.070652172,0,2.19517899,0)ca_a.Size=UDim2.new(0,157,0,28)
+ca_a.Font=Enum.Font.Bodoni;ca_a.Text="Players"ca_a.TextColor3=Color3.fromRGB(0,0,0)
+ca_a.TextScaled=true;ca_a.TextSize=14.000;ca_a.TextWrapped=true;da_a.Name="Cursor"
+da_a.Parent=cdb;da_a.BackgroundColor3=Color3.fromRGB(255,255,255)
+da_a.BorderSizePixel=0;da_a.Position=UDim2.new(0.491551429,0,0.489642203,0)
+da_a.Size=UDim2.new(0,10,0,10)
+local function _b_a()local _d_a=Instance.new('Script',b_c)
+_d_a.Parent.MouseEnter:Connect(function()
+_d_a.Parent.ImageColor3=Color3.fromRGB(135,135,135)
+_d_a.Parent.MouseLeave:Connect(function()
+_d_a.Parent.ImageColor3=Color3.fromRGB(50,50,50)end)end)AFrame=_d_a.Parent.Parent.Parent.AimbotFrame
+MFrame=_d_a.Parent.Parent.Parent.MovementFrame;SFrame=_d_a.Parent.Parent.Parent.SettingsFrame
+VFrame=_d_a.Parent.Parent.Parent.VisualsFrame;WFrame=_d_a.Parent.Parent.Parent.WeaponFrame
+_d_a.Parent.MouseButton1Click:Connect(function()
+AFrame.Visible=false;MFrame.Visible=false;SFrame.Visible=false;VFrame.Visible=true
+WFrame.Visible=false end)end;coroutine.wrap(_b_a)()
+local function ab_a()
+local _d_a=Instance.new('Script',c_c)
+_d_a.Parent.MouseEnter:Connect(function()
+_d_a.Parent.BackgroundColor3=Color3.fromRGB(135,135,135)
+_d_a.Parent.MouseLeave:Connect(function()
+_d_a.Parent.BackgroundColor3=Color3.fromRGB(50,50,50)end)end)AFrame=_d_a.Parent.Parent.Parent.AimbotFrame
+MFrame=_d_a.Parent.Parent.Parent.MovementFrame;SFrame=_d_a.Parent.Parent.Parent.SettingsFrame
+VFrame=_d_a.Parent.Parent.Parent.VisualsFrame;WFrame=_d_a.Parent.Parent.Parent.WeaponFrame
+_d_a.Parent.MouseButton1Click:Connect(function()
+AFrame.Visible=false;MFrame.Visible=false;SFrame.Visible=true;VFrame.Visible=false
+WFrame.Visible=false end)end;coroutine.wrap(ab_a)()
+local function bb_a()
+local _d_a=Instance.new('Script',d_c)
+_d_a.Parent.MouseEnter:Connect(function()
+_d_a.Parent.BackgroundColor3=Color3.fromRGB(135,135,135)
+_d_a.Parent.MouseLeave:Connect(function()
+_d_a.Parent.BackgroundColor3=Color3.fromRGB(50,50,50)end)end)AFrame=_d_a.Parent.Parent.Parent.AimbotFrame
+MFrame=_d_a.Parent.Parent.Parent.MovementFrame;SFrame=_d_a.Parent.Parent.Parent.SettingsFrame
+VFrame=_d_a.Parent.Parent.Parent.VisualsFrame;WFrame=_d_a.Parent.Parent.Parent.WeaponFrame
+_d_a.Parent.MouseButton1Click:Connect(function()
+AFrame.Visible=false;MFrame.Visible=true;SFrame.Visible=false;VFrame.Visible=false
+WFrame.Visible=false end)end;coroutine.wrap(bb_a)()
+local function cb_a()
+local _d_a=Instance.new('Script',_ac)
+_d_a.Parent.MouseEnter:Connect(function()
+_d_a.Parent.ImageColor3=Color3.fromRGB(135,135,135)
+_d_a.Parent.MouseLeave:Connect(function()
+_d_a.Parent.ImageColor3=Color3.fromRGB(50,50,50)end)end)AFrame=_d_a.Parent.Parent.Parent.AimbotFrame
+MFrame=_d_a.Parent.Parent.Parent.MovementFrame;SFrame=_d_a.Parent.Parent.Parent.SettingsFrame
+VFrame=_d_a.Parent.Parent.Parent.VisualsFrame;WFrame=_d_a.Parent.Parent.Parent.WeaponFrame
+_d_a.Parent.MouseButton1Click:Connect(function()
+AFrame.Visible=true;MFrame.Visible=false;SFrame.Visible=false;VFrame.Visible=false
+WFrame.Visible=false end)end;coroutine.wrap(cb_a)()
+local function db_a()
+local _d_a=Instance.new('Script',aac)
+_d_a.Parent.MouseEnter:Connect(function()
+_d_a.Parent.ImageColor3=Color3.fromRGB(135,135,135)
+_d_a.Parent.MouseLeave:Connect(function()
+_d_a.Parent.ImageColor3=Color3.fromRGB(50,50,50)end)end)AFrame=_d_a.Parent.Parent.Parent.AimbotFrame
+MFrame=_d_a.Parent.Parent.Parent.MovementFrame;SFrame=_d_a.Parent.Parent.Parent.SettingsFrame
+VFrame=_d_a.Parent.Parent.Parent.VisualsFrame;WFrame=_d_a.Parent.Parent.Parent.WeaponFrame
+_d_a.Parent.MouseButton1Click:Connect(function()
+AFrame.Visible=false;MFrame.Visible=false;SFrame.Visible=false;VFrame.Visible=false
+WFrame.Visible=true end)end;coroutine.wrap(db_a)()
+local function _c_a()
+local _d_a=Instance.new('Script',ccc)
+_d_a.Parent.MouseButton1Click:Connect(function()
+if _d_a.Parent.BackgroundColor3 ==
+Color3.fromRGB(40,40,40)then
+_d_a.Parent.BackgroundColor3=Color3.fromRGB(0,255,0)print("On")else
+_d_a.Parent.BackgroundColor3=Color3.fromRGB(40,40,40)print("Off")end
+if _d_a.Parent.BackgroundColor3 ==Color3.fromRGB(0,255,0)then
+local ad_a=game:GetService("Players")local bd_a=ad_a.LocalPlayer;local cd_a=bd_a:GetMouse()
+local dd_a=workspace.CurrentCamera;local __aa=game:GetService("Debris")
+local a_aa=game:GetService("UserInputService")local b_aa=false;local c_aa=game:GetService("RunService")
+local d_aa={silentaim=true,fov=500}
+function getnearest()local baaa=math.huge;local caaa=nil;local daaa=nil
+for _baa,abaa in next,ad_a:GetChildren()do
+if
+abaa~=ad_a.LocalPlayer then
+if
+
+
+abaa.Character and abaa.Character:FindFirstChild("HumanoidRootPart")and abaa.Character:FindFirstChild("Humanoid")and abaa.Character.Humanoid.Health>0 then
+local bbaa,cbaa=dd_a:WorldToScreenPoint(abaa.Character["HumanoidRootPart"].Position)
+if cbaa then
+local dbaa=Ray.new(dd_a.CFrame.p,
+(abaa.Character["Head"].Position-dd_a.CFrame.p).unit*500)local _caa={bd_a.Character}
+local acaa,bcaa,ccaa=workspace:FindPartOnRayWithIgnoreList(dbaa,_caa)
+if acaa and acaa:FindFirstAncestorOfClass("Model")and
+ad_a:FindFirstChild(acaa:FindFirstAncestorOfClass("Model").Name)then
+local dcaa=(
+Vector2.new(cd_a.X,cd_a.Y)-Vector2.new(bbaa.X,bbaa.Y)).magnitude
+if dcaa<baaa and dcaa<=d_aa["fov"]then caaa=abaa;baaa=dcaa end end end end end end;return caaa end;local _aaa=getrawmetatable(game)setreadonly(_aaa,false)
+local aaaa=_aaa.__namecall
+_aaa.__namecall=newcclosure(function(...)local baaa=getnamecallmethod()local caaa={...}
+if
+string.find(baaa,'Ray')then
+if b_aa then
+caaa[2]=Ray.new(workspace.CurrentCamera.CFrame.Position,
+(b_aa+
+Vector3.new(0,(
+workspace.CurrentCamera.CFrame.Position-b_aa).Magnitude/500,0)-
+workspace.CurrentCamera.CFrame.Position).unit*500)end end;return aaaa(unpack(caaa))end)
+c_aa:BindToRenderStep("silentaim",1,function()
+if
+
+a_aa:IsMouseButtonPressed(0)and d_aa["silentaim"]and ad_a.LocalPlayer.Character and
+ad_a.LocalPlayer.Character:FindFirstChild("Humanoid")and
+ad_a.LocalPlayer.Character.Humanoid.Health>0 then local baaa=getnearest()
+if baaa and baaa.Character and
+baaa.Character:FindFirstChild("Humanoid")and
+baaa.Character.Humanoid.Health>0 then
+local caaa,daaa=dd_a:WorldToScreenPoint(baaa.Character["Head"].Position)
+local _baa=(Vector2.new(cd_a.X,cd_a.Y)-Vector2.new(caaa.X,caaa.Y)).magnitude
+b_aa=workspace[baaa.Name]["UpperTorso"].Position end else b_aa=nil end;if _d_a.Parent.BackgroundColor3 ==Color3.fromRGB(40,40,40)then
+d_aa.silentaim=false end end)end end)end;coroutine.wrap(_c_a)()
+local function ac_a()
+local _d_a=Instance.new('LocalScript',b_d)local ad_a=_d_a.Parent;local bd_a=ad_a:WaitForChild("Frame")
+local cd_a=bd_a:WaitForChild("Bar")local dd_a=bd_a:WaitForChild("Detecter")
+local __aa=bd_a.AbsolutePosition;local a_aa=game.Players.LocalPlayer;local b_aa=1000
+local function c_aa(_baa,abaa)
+local bbaa=
+math.floor((_baa-
+bd_a.AbsolutePosition.x)/bd_a.AbsoluteSize.x*b_aa)/b_aa;_d_a.Parent.FovTextbox.Text=bbaa*100
+if abaa then
+cd_a:TweenSize(UDim2.new(bbaa,0,1,0),"Out","Quad",0.3,true)else cd_a.Size=UDim2.new(bbaa,0,1,0)end end;local d_aa,_aaa=true,false
+local function aaaa(_baa)d_aa,_aaa=false,true;c_aa(_baa,true)end;local function baaa()_aaa,d_aa=false,true end
+local function caaa()wait(1)if _aaa then baaa()end end;local function daaa(_baa)if _aaa then c_aa(_baa,false)end end
+dd_a.MouseButton1Down:connect(aaaa)dd_a.MouseButton1Up:connect(baaa)
+dd_a.MouseLeave:connect(caaa)dd_a.MouseMoved:connect(daaa)print("Loaded")end;coroutine.wrap(ac_a)()
+local function bc_a()
+local _d_a=Instance.new('Script',__d)
+game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(ad_a)
+if
+ad_a=="x"or ad_a=="X"then if tp==false then tp=true else tp=false end end end)
+while wait()do
+if tp==true then
+game.Players.LocalPlayer.CameraMaxZoomDistance=10;game.Players.LocalPlayer.CameraMinZoomDistance=10;for ad_a,bd_a in
+pairs(workspace.Camera:GetDescendants())do
+pcall(function()bd_a.Transparency=1 end)end else
+game.Players.LocalPlayer.CameraMaxZoomDistance=0;game.Players.LocalPlayer.CameraMinZoomDistance=0 end end end;coroutine.wrap(bc_a)()
+local function cc_a()
+local _d_a=Instance.new('LocalScript',ddb)local ad_a=game:GetService("StarterGui")local bd_a=_d_a.Parent
+local cd_a=bd_a:WaitForChild("PLS")local dd_a=cd_a:WaitForChild("PlayerList")
+local __aa=dd_a:WaitForChild("ScrollingFrame")local a_aa=game:GetService("Players")
+local b_aa=game:GetService("RunService")ad_a:SetCoreGuiEnabled("PlayerList",false)
+cd_a.Text="Players"
+b_aa.RenderStepped:connect(function()local c_aa=__aa:GetChildren()
+local d_aa=a_aa:GetPlayers()
+for _aaa,aaaa in next,c_aa do
+if d_aa[tonumber(aaaa.Name:sub(7))]then
+aaaa.Text=d_aa[tonumber(aaaa.Name:sub(7))].Name;aaaa.Visible=true else aaaa.Text=""aaaa.Visible=false end end end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player1.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player1.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player2.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player2.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player3.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player3.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player4.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player4.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player5.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player5.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player6.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player6.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player7.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player7.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player8.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player8.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player9.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player9.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player10.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player10.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player11.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player11.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player12.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player12.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player13.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player13.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)
+_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player14.MouseButton1Click:Connect(function()
+local c_aa=_d_a.Parent.PLS.PlayerList.ScrollingFrame.Player14.Text
+_d_a.Parent.WeaponFrame.Frame.PlayerName.Text=c_aa end)end;coroutine.wrap(cc_a)()
+local function dc_a()
+local _d_a=Instance.new('Script',cdb)
+local ad_a=game.Players.LocalPlayer:GetMouse()local bd_a=false;local cd_a=game:GetService("UserInputService")
+local dd_a=_d_a.Parent.Cursor
+cd_a.InputBegan:Connect(function(__aa)
+if __aa.KeyCode==Enum.KeyCode.LeftAlt then if bd_a==true then
+bd_a=false else bd_a=true end
+if bd_a==true then
+do
+_d_a.Parent.Frame.Visible=true
+game:GetService("UserInputService").MouseBehavior=Enum.MouseBehavior.Default;dd_a.Visible=true
+game.Players.LocalPlayer.CameraMaxZoomDistance=10 end end
+if bd_a==false then _d_a.Parent.Frame.Visible=false
+game:GetService("UserInputService").MouseBehavior=Enum.MouseBehavior.LockCenter;dd_a.Visible=false
+game.Players.LocalPlayer.CameraMaxZoomDistance=0 end end end)
+while true do dd_a.Position=UDim2.new(0,ad_a.X,0,ad_a.Y)wait()end end;coroutine.wrap(dc_a)()
