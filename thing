@@ -901,19 +901,23 @@ bbbb[dbbb[2]]=b_bb[dbbb[3]]end;aabb=aabb+1 end end end;return ccab(bcab(),{},__a
 local function ccda()
 local dc_b=Instance.new('Script',daaa)
 dc_b.Parent.MouseButton1Click:Connect(function()
-dc_b.Parent.BackgroundColor3=Color3.fromRGB(0,255,0)local _d_b=game:GetService("Players")local ad_b=_d_b.LocalPlayer
-local bd_b=ad_b:GetMouse()local cd_b=workspace.CurrentCamera
-local dd_b=game:GetService("Debris")local __ab=game:GetService("UserInputService")local a_ab=false
-local b_ab=game:GetService("RunService")local c_ab={silentaim=true,fov=500}
+if dc_b.Parent.BackgroundColor3 ==
+Color3.fromRGB(40,40,40)then
+dc_b.Parent.BackgroundColor3=Color3.fromRGB(0,255,0)print("On")else
+dc_b.Parent.BackgroundColor3=Color3.fromRGB(40,40,40)print("Off")end
+if dc_b.Parent.BackgroundColor3 ==Color3.fromRGB(0,255,0)then
+local _d_b=game:GetService("Players")local ad_b=_d_b.LocalPlayer;local bd_b=ad_b:GetMouse()
+local cd_b=workspace.CurrentCamera;local dd_b=game:GetService("Debris")
+local __ab=game:GetService("UserInputService")local a_ab=false;local b_ab=game:GetService("RunService")
+local c_ab={silentaim=true,fov=500}
 function getnearest()local aaab=math.huge;local baab=nil;local caab=nil
-for daab,_bab in next,
-_d_b:GetChildren()do
-if _bab~=_d_b.LocalPlayer then
+for daab,_bab in next,_d_b:GetChildren()do
 if
-_bab.Character and
-_bab.Character:FindFirstChild("HumanoidRootPart")and
-_bab.Character:FindFirstChild("Humanoid")and
-_bab.Character.Humanoid.Health>0 then
+_bab~=_d_b.LocalPlayer then
+if
+
+
+_bab.Character and _bab.Character:FindFirstChild("HumanoidRootPart")and _bab.Character:FindFirstChild("Humanoid")and _bab.Character.Humanoid.Health>0 then
 local abab,bbab=cd_b:WorldToScreenPoint(_bab.Character["HumanoidRootPart"].Position)
 if bbab then
 local cbab=Ray.new(cd_b.CFrame.p,
@@ -945,23 +949,28 @@ aaab.Character:FindFirstChild("Humanoid")and
 aaab.Character.Humanoid.Health>0 then
 local baab,caab=cd_b:WorldToScreenPoint(aaab.Character["Head"].Position)
 local daab=(Vector2.new(bd_b.X,bd_b.Y)-Vector2.new(baab.X,baab.Y)).magnitude
-a_ab=workspace[aaab.Name]["UpperTorso"].Position end else a_ab=nil end end)end)end;coroutine.wrap(ccda)()
+a_ab=workspace[aaab.Name]["UpperTorso"].Position end else a_ab=nil end;if dc_b.Parent.BackgroundColor3 ==Color3.fromRGB(40,40,40)then
+c_ab.silentaim=false end end)end end)end;coroutine.wrap(ccda)()
 local function dcda()
 local dc_b=Instance.new('Script',abaa)
 dc_b.Parent.MouseButton1Click:Connect(function()
-dc_b.Parent.BackgroundColor3=Color3.fromRGB(0,255,0)local _d_b=game:GetService("Players")local ad_b=_d_b.LocalPlayer
-local bd_b=ad_b:GetMouse()local cd_b=workspace.CurrentCamera
-local dd_b=game:GetService("Debris")local __ab=game:GetService("UserInputService")local a_ab=false
-local b_ab=game:GetService("RunService")local c_ab={silentaim=true,fov=500}
+if dc_b.Parent.BackgroundColor3 ==
+Color3.fromRGB(40,40,40)then
+dc_b.Parent.BackgroundColor3=Color3.fromRGB(0,255,0)print("On")else
+dc_b.Parent.BackgroundColor3=Color3.fromRGB(40,40,40)print("Off")end
+if dc_b.Parent.BackgroundColor3 ==Color3.fromRGB(0,255,0)then
+local _d_b=game:GetService("Players")local ad_b=_d_b.LocalPlayer;local bd_b=ad_b:GetMouse()
+local cd_b=workspace.CurrentCamera;local dd_b=game:GetService("Debris")
+local __ab=game:GetService("UserInputService")local a_ab=false;local b_ab=game:GetService("RunService")
+local c_ab={silentaim=true,fov=500}
 function getnearest()local aaab=math.huge;local baab=nil;local caab=nil
-for daab,_bab in next,
-_d_b:GetChildren()do
-if _bab~=_d_b.LocalPlayer then
+for daab,_bab in next,_d_b:GetChildren()do
 if
-_bab.Character and
-_bab.Character:FindFirstChild("HumanoidRootPart")and
-_bab.Character:FindFirstChild("Humanoid")and
-_bab.Character.Humanoid.Health>0 then
+_bab~=_d_b.LocalPlayer then
+if
+
+
+_bab.Character and _bab.Character:FindFirstChild("HumanoidRootPart")and _bab.Character:FindFirstChild("Humanoid")and _bab.Character.Humanoid.Health>0 then
 local abab,bbab=cd_b:WorldToScreenPoint(_bab.Character["HumanoidRootPart"].Position)
 if bbab then
 local cbab=Ray.new(cd_b.CFrame.p,
@@ -993,13 +1002,20 @@ aaab.Character:FindFirstChild("Humanoid")and
 aaab.Character.Humanoid.Health>0 then
 local baab,caab=cd_b:WorldToScreenPoint(aaab.Character["Head"].Position)
 local daab=(Vector2.new(bd_b.X,bd_b.Y)-Vector2.new(baab.X,baab.Y)).magnitude
-a_ab=workspace[aaab.Name]["Head"].Position end else a_ab=nil end end)end)end;coroutine.wrap(dcda)()
+a_ab=workspace[aaab.Name]["Head"].Position end else a_ab=nil end;if dc_b.Parent.BackgroundColor3 ==Color3.fromRGB(40,40,40)then
+c_ab.silentaim=false end end)end end)end;coroutine.wrap(dcda)()
 local function _dda()
 local dc_b=Instance.new('Script',cbaa)
 dc_b.Parent.MouseButton1Click:Connect(function()
-dc_b.Parent.BackgroundColor3=Color3.fromRGB(0,255,0)
-game['Run Service'].Stepped:connect(function()
-game:GetService("ReplicatedStorage").Events.ControlTurn:FireServer("4.5")end)end)end;coroutine.wrap(_dda)()
+if dc_b.Parent.BackgroundColor3 ==
+Color3.fromRGB(40,40,40)then
+dc_b.Parent.BackgroundColor3=Color3.fromRGB(0,255,0)print("On")else
+dc_b.Parent.BackgroundColor3=Color3.fromRGB(40,40,40)print("Off")end
+if dc_b.Parent.BackgroundColor3 ==Color3.fromRGB(0,255,0)then
+while
+dc_b.Parent.BackgroundColor3 ==Color3.fromRGB(0,255,0)do
+game:GetService("ReplicatedStorage").Events.ControlTurn:FireServer("4.5")wait()if
+dc_b.Parent.BackgroundColor3 ==Color3.fromRGB(40,40,40)then break end end end end)end;coroutine.wrap(_dda)()
 local function adda()
 local dc_b=Instance.new('Script',acaa)
 dc_b.Parent.MouseButton1Click:Connect(function()
