@@ -48,7 +48,7 @@ local b_da=Instance.new("TextButton")local c_da=Instance.new("TextButton")
 local d_da=Instance.new("TextButton")local _ada=Instance.new("TextButton")
 local aada=Instance.new("TextButton")local bada=Instance.new("TextButton")
 local cada=Instance.new("TextButton")local dada=Instance.new("TextButton")
-local _bda=Instance.new("TextLabel")local abda=Instance.new("Frame")ab_a.Name="NewUi2"
+local _bda=Instance.new("TextLabel")local abda=Instance.new("Frame")ab_a.Name="CounterBlox"
 ab_a.Parent=game.CoreGui;bb_a.Active=true;bb_a.Draggable=true;bb_a.Parent=ab_a
 bb_a.BackgroundColor3=Color3.fromRGB(65,65,65)bb_a.BorderSizePixel=0
 bb_a.Position=UDim2.new(0.0692307726,0,0.128060266,0)bb_a.Size=UDim2.new(0,497,0,450)cb_a.Name="TapList"
