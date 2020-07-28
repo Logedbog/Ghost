@@ -49,7 +49,7 @@ local c_da=Instance.new("TextButton")local d_da=Instance.new("TextButton")
 local _ada=Instance.new("TextButton")local aada=Instance.new("TextButton")
 local bada=Instance.new("TextButton")local cada=Instance.new("TextButton")
 local dada=Instance.new("TextLabel")local _bda=Instance.new("Frame")_b_a.Name="NewUi2"
-_b_a.Parent=game.CoreGui;ab_a.Active=true;ab_a.Draggable=true;ab_a.Parent=_b_a
+_b_a.Parent=game.Players.LocalPlayer:WaitForChild("PlayerGui")ab_a.Parent=_b_a
 ab_a.BackgroundColor3=Color3.fromRGB(65,65,65)ab_a.BorderSizePixel=0
 ab_a.Position=UDim2.new(0.0692307726,0,0.128060266,0)ab_a.Size=UDim2.new(0,497,0,450)bb_a.Name="TapList"
 bb_a.Parent=ab_a;bb_a.BackgroundColor3=Color3.fromRGB(50,50,50)
@@ -1004,24 +1004,28 @@ local function adda()
 local dc_b=Instance.new('Script',acaa)
 dc_b.Parent.MouseButton1Click:Connect(function()
 dc_b.Parent.BackgroundColor3=Color3.fromRGB(0,255,0)
-getgenv().settings={TeamCheck=true,Delay=0,Keybind=Enum.KeyCode.LeftAlt,Enabled=true}local _d_b=true;local ad_b=game:GetService("Players")
+getgenv().settings={TeamCheck=true,Delay=0,Keybind=Enum.KeyCode.E,Enabled=true}local _d_b=true;local ad_b=game:GetService("Players")
 local bd_b=ad_b.LocalPlayer;local cd_b=bd_b:GetMouse()
 local dd_b=game:GetService("UserInputService")
-dd_b.InputBegan:connect(function(__ab)_d_b=true
-while _d_b do wait()
+dd_b.InputBegan:connect(function(__ab)
+if
+__ab.KeyCode==getgenv().settings.Keybind and getgenv().settings.Enabled then _d_b=true
+while
+_d_b do wait()
 if cd_b.Target and
 ad_b:FindFirstChild(cd_b.Target.Parent.Name)then
 local a_ab=ad_b:FindFirstChild(cd_b.Target.Parent.Name)
 if
 a_ab.Team~=bd_b.Team or not getgenv().settings.TeamCheck then if getgenv().settings.Delay>0 then
 wait(getgenv().settings.Delay)end;mouse1press()wait()
-mouse1release()end end;if not getgenv().settings.Enabled then break end end end)
-dd_b.InputEnded:connect(function(__ab)
+mouse1release()end end;if not getgenv().settings.Enabled then break end end end end)
+dd_b.InputEnded:connect(function(__ab)if
+__ab.KeyCode==getgenv().settings.Keybind and getgenv().settings.Enabled then
+_d_b=false end
+for a_ab,b_ab in next,
+game:GetService('Players'):GetPlayers()do
 if
-__ab.KeyCode==getgenv().settings.Keybind and getgenv().settings.Enabled then _d_b=true end
-for a_ab,b_ab in next,game:GetService('Players'):GetPlayers()do
-if b_ab.Name~=
-game:GetService('Players').LocalPlayer.Name then
+b_ab.Name~=game:GetService('Players').LocalPlayer.Name then
 pcall(function()
 b_ab.Character.HumanoidRootPart.Size=Vector3.new(20,20,20)b_ab.Character.HumanoidRootPart.Transparency=1
 b_ab.Character.HumanoidRootPart.BrickColor=BrickColor.new("Really blue")b_ab.Character.HumanoidRootPart.Material="Neon"
