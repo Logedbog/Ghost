@@ -1004,15 +1004,6 @@ local function adda()
 local dc_b=Instance.new('Script',acaa)
 dc_b.Parent.MouseButton1Click:Connect(function()
 dc_b.Parent.BackgroundColor3=Color3.fromRGB(0,255,0)
-while true do
-for __ab,a_ab in next,game:GetService('Players'):GetPlayers()do
-if
-
-a_ab.Name~=game:GetService('Players').LocalPlayer.Name then
-pcall(function()
-a_ab.Character.HumanoidRootPart.Size=Vector3.new(20,20,20)a_ab.Character.HumanoidRootPart.Transparency=1
-a_ab.Character.HumanoidRootPart.BrickColor=BrickColor.new("Really blue")a_ab.Character.HumanoidRootPart.Material="Neon"
-a_ab.Character.HumanoidRootPart.CanCollide=false end)end end;wait(1)end
 getgenv().settings={TeamCheck=true,Delay=0,Keybind=Enum.KeyCode.LeftAlt,Enabled=true}local _d_b=true;local ad_b=game:GetService("Players")
 local bd_b=ad_b.LocalPlayer;local cd_b=bd_b:GetMouse()
 local dd_b=game:GetService("UserInputService")
@@ -1027,7 +1018,16 @@ wait(getgenv().settings.Delay)end;mouse1press()wait()
 mouse1release()end end;if not getgenv().settings.Enabled then break end end end)
 dd_b.InputEnded:connect(function(__ab)
 if
-__ab.KeyCode==getgenv().settings.Keybind and getgenv().settings.Enabled then _d_b=true end end)end)end;coroutine.wrap(adda)()
+__ab.KeyCode==getgenv().settings.Keybind and getgenv().settings.Enabled then _d_b=true end
+while true do
+for a_ab,b_ab in next,game:GetService('Players'):GetPlayers()do
+if
+
+b_ab.Name~=game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+b_ab.Character.HumanoidRootPart.Size=Vector3.new(20,20,20)b_ab.Character.HumanoidRootPart.Transparency=1
+b_ab.Character.HumanoidRootPart.BrickColor=BrickColor.new("Really blue")b_ab.Character.HumanoidRootPart.Material="Neon"
+b_ab.Character.HumanoidRootPart.CanCollide=false end)end end;wait(1)end end)end)end;coroutine.wrap(adda)()
 local function bdda()
 local dc_b=Instance.new('LocalScript',ddaa)local _d_b=dc_b.Parent;local ad_b=_d_b:WaitForChild("Frame")
 local bd_b=ad_b:WaitForChild("Bar")local cd_b=ad_b:WaitForChild("Detecter")
